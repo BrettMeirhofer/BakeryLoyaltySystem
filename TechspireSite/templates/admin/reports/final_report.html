@@ -1,0 +1,41 @@
+{% extends 'admin/reports/base_report.html' %}
+{% block content %}
+
+    <h1>Techspire Reports</h1>
+    {% for report in reports %}
+        <h2>{{report.name}}</h2>
+        <h3>Creator: {{report.owner}}</h3>
+        <h3>Description: {{report.desc}}</h3>
+        <h3>Purpose: {{report.rule}}</h3>
+        <h3>SQL</h3>
+        <div style="page-break-after: always; background-color: #D3D3D3; padding:10px;">
+            {% for row in report.sql %}
+            <p>{{row}}</p>
+            {% endfor %}
+        </div>
+        <h3>Output</h3>
+        <table style="page-break-after: always;">
+            <thead>
+            <tr>
+                {% for column in report.titles %}
+                <th>
+                    {{column}}
+                </th>
+                {% endfor %}
+            </tr>
+            </thead>
+
+            {% for row in report.data %}
+            <tr>
+                {% for column in row %}
+                <td class="{{column.1}}">
+                    {{column.0}}
+                </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    {% endfor %}
+
+{% endblock %}
+

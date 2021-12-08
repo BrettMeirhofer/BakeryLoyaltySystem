@@ -1,0 +1,13 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block branding %}
+<h1 id="site-name">
+    <a href="{% url 'admin:index' %}">
+        <img src="{% static 'HotbreadsIcon.png' %}" height="60px" />
+    </a>
+</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

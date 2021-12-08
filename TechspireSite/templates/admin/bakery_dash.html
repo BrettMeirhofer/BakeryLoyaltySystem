@@ -1,0 +1,85 @@
+{% extends 'admin/base_site.html' %}
+{% load i18n %}
+{% load static %}
+{% block nav-sidebar %}{% endblock %}
+{% block breadcrumbs %}{% endblock %}
+{% block extrahead %}{{ block.super }}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="{% static 'js/bakery_dash.js' %}"></script>
+<style>
+    input[type=button]{
+        padding: 20px 30px;
+        font-size: 1.2em;
+        margin: auto;
+    }
+
+    #content{
+        margin: auto;
+        float: none;
+        width: 1400px;
+        text-align:center
+    }
+
+
+
+
+</style>
+{% endblock %}
+
+
+{% block content %}
+<input type="hidden" id="Product_Perf" data-url="{% url 'admin:top_products_month'%}" />
+<input type="hidden" id="Emp_Perf" data-url="{% url 'admin:top_emps_month'%}" />
+<input type="hidden" id="Cust_Perf" data-url="{% url 'admin:top_cust_month'%}" />
+<a href="/admin/Bakery/customer/add/"><input type="button" name="Customer" value="Add Customer"></a>
+<a href="/admin/Bakery/customer/"><input type="button" name="Customer" value="View Customers"></a>
+<a href="/admin/Bakery/order/add/"><input type="button" name="Customer" value="Add Transaction"></a>
+<a href="{% url 'admin:reports'%}"><input type="button" name="Customer" value="View Reports"></a>
+<a href="{% url 'admin:Bakery'%}"><input type="button" name="Customer" value="More Options"></a>
+<canvas id="chart1" style="height: 250px; width: 600px; display:inline-block; margin: 30px;"></canvas>
+<canvas id="chart2" style="height: 250px; width: 600px; display:inline-block; margin: 30px;"></canvas>
+<canvas id="chart3" style="height: 250px; width: 600px; display:inline-block; margin: 30px;"></canvas>
+{% endblock %}
+
+
+
+<script>
+window.onload = function() {
+
+var dataPoints = [];
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2",
+	title: {
+		text: "Daily Sales Data"
+	},
+	axisY: {
+		title: "Units",
+		titleFontSize: 24,
+		includeZero: true
+	},
+	data: [{
+		type: "column",
+		yValueFormatString: "#,### Units",
+		dataPoints: dataPoints
+	}]
+});
+
+function addData(data) {
+	for (var i = 0; i < data.length; i++) {
+		dataPoints.push({
+			x: new Date(data[i].date),
+			y: data[i].units
+		});
+	}
+	chart.render();
+
+}
+
+$.getJSON("https://canvasjs.com/data/gallery/javascript/daily-sales-data.json", addData);
+
+}
+</script>
+

@@ -1,0 +1,11 @@
+{% extends "admin/hide_inline.html" %}
+{% load i18n %}
+{% block content %}
+<input type="hidden" id="States_URL" data-url="{% url 'admin:load_states'%}" />
+<style>
+    #id_form-0-zip_code{
+        width: 10em;
+    }
+</style>
+{{ block.super }}
+{% endblock %}

@@ -1,0 +1,27 @@
+Style
+1. Every file should end with a new line
+2. Keywords such as SELECT, DELETE, or REFERENCES should be upper case
+3. Variable types such as int, nvarchar, or date should be lower case
+4. The start and end of a create table command should have their own lines
+5. Each column/field definition should have it's own line
+6. Fields should have one tab at the start of their line
+7. There should be one empty line between each block of sql
+8. The first line of a report should contain the human readable names of the columns that will be output as a comment delimited by commas. For example
+--First Name,Last Name,Age,Status
+
+Naming
+1. Field and Table names should be identical to the ones listed in the data dictionary
+2. Create scripts should be named Create.sql
+3. Alter scripts should be named Alter.sql
+4. Drop scripts should be named Drop.sql
+5. Scripts that return columns using SELECT should start with Report and end with a descriptive name. For example ReportEmployeesByLocation.sql
+6. Bulk Insert scripts should start with BulkInsert and end with the exact name of the table. For example BulkInsertCountry.sql
+7. Delete, Insert, and Update scripts should start with their respective key word and end with a descriptive name. For example Update.
+8. Data files should start with table name and end with List. Example CountryList.csv
+
+File Location
+1. SQL scripts should be within individual folders
+2. Data files should be located within the Data folder
+
+Data
+1. All data files should have the .csv file extension and have tabs as delimitors

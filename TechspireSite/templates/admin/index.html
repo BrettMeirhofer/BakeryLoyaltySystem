@@ -1,0 +1,20 @@
+{% extends 'admin/index.html' %}
+{% load i18n %}
+{% block extrahead %}{{ block.super }}
+{% block title %}{% endblock %}
+<style>
+    #content{
+        margin: auto;
+        float: none;
+        width: 1400px;
+        text-align:center
+    }
+
+</style>
+{% endblock %}
+
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% translate 'Home' %}</a> › {{ title }}
+    </div>
+{% endblock %}

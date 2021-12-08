@@ -1,0 +1,29 @@
+{% extends 'admin/base.html' %}
+{% block extrahead %}{{ block.super }}
+<style>
+
+
+    .readonly{
+    text-align: right
+    }
+
+    :root {
+  --primary: #458053;
+  --secondary: #5cab6c;
+  --link-fg: #449c69;
+  --link-selected-fg: #5bb364;
+    }
+
+
+
+    #content-related{
+    visibility: collapse;
+    }
+
+    a{
+        font-size: 1.3em;
+    }
+
+
+</style>
+{% endblock %}

@@ -1,0 +1,277 @@
+ID	Name	Desc	Price	Type	Col1	Col2	Col3
+100	Bombay Nan Bread	Indian large round eggless bread	2.99	1	1	100	0
+101	Bomaby Nan Bread (small-2pcs)	Indian small round eggless bread	2.99	1	1	100	0
+102	Fruit bread	Sweet eggless bread with fruit candies	3.49	1	1	100	0
+103	Fruit bun	Sweet eggless bun with fruit candies	3.49	1	1	100	0
+104	Milk bread	Sweet eggles bread	3.49	1	1	100	0
+105	Pav bread	Plain small 6pcs eggless bun	3.49	1	1	100	0
+106	Plain bread	Plain eggless bread	2.49	1	1	100	0
+107	Sandwich bread	Large plain eggless bread	4.49	1	1	100	0
+108	Wheat bread	Partial wheat eggless bread(not 100%)	3.99	1	1	100	0
+109	Grilled cheese sandwich	Mozarella cheese sandwich made with house baked  sandwich bread	4.99	2	1	100	0
+110	Pav bhaji	Spicy potato gravy with house baked pav bread	6.99	2	1	102	0
+111	Vada Pav	Spicy potato patties with house baked pav bread	5	2	1	100	0
+112	Vegetable grilled sandwich	Cheese and mixed vegetable sandwich in house baked sandwich bread	6.49	2	1	100	0
+113	Extra pav	butteredgrilled house baked bread	1.29	2	1	100	0
+114	Aalu Capsicum bun	Spicy potato filled bun	3.49	3	1	101	0
+115	Chicken Seekh Kabob bun	Spicy chicken seekh kabob filled bun	3.49	3	1	101	0
+116	Chicken Tikka Bun	Spicy grounded chicken tikka flavor filled bun	3.49	3	1	100	0
+117	Keema Bun	Spicy grounded goat filled bun	4.99	3	1	102	0
+118	Panner Masala Bun	Spicy indian cottage cheese filled bun	3.99	3	1	101	0
+119	"8"" round blackforest cake"	chocolate base with vanilla cream and crushed cherries	25	4	1	100	0
+120	"8"" round pineapple cake"	vanilla base with vanilla cream and crushed pineapple	25	4	1	100	0
+121	"8"" round mix fruit cake"	vanilla base with fresh fruits 	25	4	1	100	0
+122	"8"" round fresh strawberry cake"	vanilla base with fresh strawberries	30	4	1	100	0
+123	"8"" round mango cake"	vanilla base with mango puree	30	4	1	100	0
+124	"8"" round pistachio cake"	vanilla base with pistachio essence and pistachio nuts	35	4	1	100	0
+125	"8"" round nougat cake"	vanilla base with caramalized sugar with cashew	30	4	1	100	0
+126	"8"" round mocha cake"	chocolate with chocolate and coffee mix cream	30	4	1	100	0
+127	"8"" round coffee cake"	vanilla base with coffee flavor	30	4	1	100	0
+128	"8"" round chocolate flakes cake"	chocolate base with fresh chocolate cream	30	4	1	100	0
+129	"8"" round rasamalai cake"	vanilla base with pieces of rasamalai 	35	4	1	100	0
+130	"8"" round fererro rocher chocolate cake"	chocolate base with crushed hazelnut chocolate 	35	4	1	100	0
+131	"8"" round Chocolate delight cake"	chocolate base with fresh chocolate cream and chocolate ganache	35	4	1	100	0
+132	"8"" round Raspberry cake"	vanilla base with raspberries flavor	35	4	1	100	0
+133	"8"" Dulce de leche cake"	vanilla base caramel flavor	30	4	1	100	0
+134	"8"" Gulab jamun cake"	vanilla base with pieces of gulabjamun	35	4	1	100	0
+135	"8"" round eggless blackforest cake"	chocolate base with vanilla cream and crushed cherries	30	4	1	100	0
+136	"8"" round eggless pineapple cake"	vanilla base with vanilla cream and crushed pineapple	30	4	1	100	0
+137	"8"" round eggless mix fruit cake"	vanilla base with fresh fruits 	30	4	1	100	0
+138	"8"" round eggless fresh strawberry cake"	vanilla base with fresh strawberries	35	4	1	100	0
+139	"8"" round eggless mango cake"	vanilla base with mango puree	35	4	1	100	0
+140	"8"" round eggless pistachio cake"	vanilla base with pistachio essence and pistachio nuts	40	4	1	100	0
+141	"8"" round eggless nougat cake"	vanilla base with caramalized sugar with cashew	35	4	1	100	0
+142	"8"" round eggless mocha cake"	chocolate with chocolate and coffee mix cream	35	4	1	100	0
+143	"8"" round eggless coffee cake"	vanilla base with coffee flavor	35	4	1	100	0
+144	"8"" round eggless chocolate flakes cake"	chocolate base with fresh chocolate cream	35	4	1	100	0
+145	"8"" round eggless rasamalai cake"	vanilla base with pieces of rasamalai 	40	4	1	100	0
+146	"8"" round eggless fererro rocher chocolate cake"	chocolate base with crushed hazelnut chocolate 	40	4	1	100	0
+147	"8"" round eggless Chocolate delight cake"	chocolate base with fresh chocolate cream and chocolate ganache	40	4	1	100	0
+148	"8"" round eggless Raspberry cake"	vanilla base with raspberries flavor	40	4	1	100	0
+149	"8"" round eggless Dulce de leche cake"	vanilla base caramel flavor	35	4	1	100	0
+150	"8"" round eggless Gulab jamun cake"	vanilla base with pieces of gulabjamun	40	4	1	100	0
+151	1/4 sheet blackforest cake	chocolate base with vanilla cream and crushed cherries	45	4	1	100	0
+152	1/4 sheet pineapple cake	vanilla base with vanilla cream and crushed pineapple	45	4	1	100	0
+153	1/4 sheet mix fruit cake	vanilla base with fresh fruits 	45	4	1	100	0
+154	1/4 sheet fresh strawberry cake	vanilla base with fresh strawberries	55	4	1	100	0
+155	1/4 sheet mango cake	vanilla base with mango puree	55	4	1	100	0
+156	1/4 sheet pistachio cake	vanilla base with pistachio essence and pistachio nuts	65	4	1	100	0
+157	1/4 sheet nougat cake	vanilla base with caramalized sugar with cashew	55	4	1	100	0
+158	1/4 sheet mocha cake	chocolate with chocolate and coffee mix cream	55	4	1	100	0
+159	1/4 sheet coffee cake	vanilla base with coffee flavor	55	4	1	100	0
+160	1/4 sheet chocolate flakes cake	chocolate base with fresh chocolate cream	55	4	1	100	0
+161	1/4 sheet rasamalai cake	vanilla base with pieces of rasamalai 	65	4	1	100	0
+162	1/4 sheet fererro rocher chocolate cake	chocolate base with crushed hazelnut chocolate 	65	4	1	100	0
+163	1/4 sheet Chocolate delight cake	chocolate base with fresh chocolate cream and chocolate ganache	65	4	1	100	0
+164	1/4 sheet Raspberry cake	vanilla base with raspberries flavor	65	4	1	100	0
+165	1/4 sheet de leche cake	vanilla base caramel flavor	55	4	1	100	0
+166	1/4 sheet Gulab jamun cake	vanilla base with pieces of gulabjamun	65	4	1	100	0
+167	1/4 sheet eggless blackforest cake	chocolate base with vanilla cream and crushed cherries	55	4	1	100	0
+168	1/4 sheet eggless pineapple cake	vanilla base with vanilla cream and crushed pineapple	55	4	1	100	0
+169	1/4 sheet eggless mix fruit cake	vanilla base with fresh fruits 	55	4	1	100	0
+170	1/4 sheet eggless fresh strawberry cake	vanilla base with fresh strawberries	65	4	1	100	0
+171	1/4 sheeteggless mango cake	vanilla base with mango puree	65	4	1	100	0
+172	1/4 sheet eggless pistachio cake	vanilla base with pistachio essence and pistachio nuts	75	4	1	100	0
+173	1/4 sheet eggless nougat cake	vanilla base with caramalized sugar with cashew	65	4	1	100	0
+174	1/4 sheet eggless mocha cake	chocolate with chocolate and coffee mix cream	65	4	1	100	0
+175	1/4 sheet eggless coffee cake	vanilla base with coffee flavor	65	4	1	100	0
+176	1/4 sheet eggless chocolate flakes cake	chocolate base with fresh chocolate cream	65	4	1	100	0
+177	1/4 sheet eggless rasamalai cake	vanilla base with pieces of rasamalai 	75	4	1	100	0
+178	1/4 sheet eggless fererro rocher chocolate cake	chocolate base with crushed hazelnut chocolate 	75	4	1	100	0
+179	1/4 sheet eggless Chocolate delight cake	chocolate base with fresh chocolate cream and chocolate ganache	75	4	1	100	0
+180	1/4 sheet eggless Raspberry cake	vanilla base with raspberries flavor	75	4	1	100	0
+181	1/4 sheet eggless Dulce de leche cake	vanilla base caramel flavor	65	4	1	100	0
+182	1/4 sheet eggless Gulab jamun cake	vanilla base with pieces of gulabjamun	75	4	1	100	0
+183	1/2 sheet blackforest cake	chocolate base with vanilla cream and crushed cherries	70	4	1	100	0
+184	1/2 sheet pineapple cake	vanilla base with vanilla cream and crushed pineapple	70	4	1	100	0
+185	1/2 sheet mix fruit cake	vanilla base with fresh fruits 	70	4	1	100	0
+186	1/2 sheet fresh strawberry cake	vanilla base with fresh strawberries	85	4	1	100	0
+187	1/2 sheet mango cake	vanilla base with mango puree	85	4	1	100	0
+188	1/2 sheet pistachio cake	vanilla base with pistachio essence and pistachio nuts	100	4	1	100	0
+189	1/2 sheet nougat cake	vanilla base with caramalized sugar with cashew	85	4	1	100	0
+190	1/2 sheet mocha cake	chocolate with chocolate and coffee mix cream	85	4	1	100	0
+191	1/2 sheet coffee cake	vanilla base with coffee flavor	85	4	1	100	0
+192	1/2 sheet chocolate flakes cake	chocolate base with fresh chocolate cream	85	4	1	100	0
+193	1/2 sheet rasamalai cake	vanilla base with pieces of rasamalai 	100	4	1	100	0
+194	1/2 sheet fererro rocher chocolate cake	chocolate base with crushed hazelnut chocolate 	100	4	1	100	0
+195	1/2 sheet Chocolate delight cake	chocolate base with fresh chocolate cream and chocolate ganache	100	4	1	100	0
+196	1/2 sheet Raspberry cake	vanilla base with raspberries flavor	100	4	1	100	0
+197	1/2 sheet de leche cake	vanilla base caramel flavor	85	4	1	100	0
+198	1/2 sheet Gulab jamun cake	vanilla base with pieces of gulabjamun	100	4	1	100	0
+199	1/2 sheet eggless blackforest cake	chocolate base with vanilla cream and crushed cherries	85	4	1	100	0
+200	1/2 sheet eggless pineapple cake	vanilla base with vanilla cream and crushed pineapple	85	4	1	100	0
+201	1/2 sheet eggless mix fruit cake	vanilla base with fresh fruits 	85	4	1	100	0
+202	1/2 sheet eggless fresh strawberry cake	vanilla base with fresh strawberries	100	4	1	100	0
+203	1/2 sheeteggless mango cake	vanilla base with mango puree	100	4	1	100	0
+204	1/2 sheet eggless pistachio cake	vanilla base with pistachio essence and pistachio nuts	115	4	1	100	0
+205	1/2 sheet eggless nougat cake	vanilla base with caramalized sugar with cashew	100	4	1	100	0
+206	1/2 sheet eggless mocha cake	chocolate with chocolate and coffee mix cream	100	4	1	100	0
+207	1/2 sheet eggless coffee cake	vanilla base with coffee flavor	100	4	1	100	0
+208	1/2 sheet eggless chocolate flakes cake	chocolate base with fresh chocolate cream	100	4	1	100	0
+209	1/2 sheet eggless rasamalai cake	vanilla base with pieces of rasamalai 	115	4	1	100	0
+210	1/2 sheet eggless fererro rocher chocolate cake	chocolate base with crushed hazelnut chocolate 	115	4	1	100	0
+211	1/2 sheet eggless Chocolate delight cake	chocolate base with fresh chocolate cream and chocolate ganache	115	4	1	100	0
+212	1/2 sheet eggless Raspberry cake	vanilla base with raspberries flavor	115	4	1	100	0
+213	1/2 sheet eggless Dulce de leche cake	vanilla base caramel flavor	100	4	1	100	0
+214	1/2 sheet eggless Gulab jamun cake	vanilla base with pieces of gulabjamun	115	4	1	100	0
+215	full sheet blackforest cake	chocolate base with vanilla cream and crushed cherries	130	4	1	100	0
+216	full sheet pineapple cake	vanilla base with vanilla cream and crushed pineapple	130	4	1	100	0
+217	full sheet mix fruit cake	vanilla base with fresh fruits 	130	4	1	100	0
+218	full sheet fresh strawberry cake	vanilla base with fresh strawberries	160	4	1	100	0
+219	full sheet mango cake	vanilla base with mango puree	160	4	1	100	0
+220	full sheet pistachio cake	vanilla base with pistachio essence and pistachio nuts	190	4	1	100	0
+221	full sheet nougat cake	vanilla base with caramalized sugar with cashew	160	4	1	100	0
+222	full sheet mocha cake	chocolate with chocolate and coffee mix cream	160	4	1	100	0
+223	full sheet coffee cake	vanilla base with coffee flavor	160	4	1	100	0
+224	full sheet chocolate flakes cake	chocolate base with fresh chocolate cream	160	4	1	100	0
+225	full sheet rasamalai cake	vanilla base with pieces of rasamalai 	190	4	1	100	0
+226	full sheet fererro rocher chocolate cake	chocolate base with crushed hazelnut chocolate 	190	4	1	100	0
+227	full sheet Chocolate delight cake	chocolate base with fresh chocolate cream and chocolate ganache	190	4	1	100	0
+228	full sheet Raspberry cake	vanilla base with raspberries flavor	190	4	1	100	0
+229	full sheet de leche cake	vanilla base caramel flavor	160	4	1	100	0
+230	full sheet Gulab jamun cake	vanilla base with pieces of gulabjamun	190	4	1	100	0
+231	full sheet eggless blackforest cake	chocolate base with vanilla cream and crushed cherries	160	4	1	100	0
+232	full sheet eggless pineapple cake	vanilla base with vanilla cream and crushed pineapple	160	4	1	100	0
+233	full sheet eggless mix fruit cake	vanilla base with fresh fruits 	160	4	1	100	0
+234	full sheet eggless fresh strawberry cake	vanilla base with fresh strawberries	190	4	1	100	0
+235	full sheeteggless mango cake	vanilla base with mango puree	190	4	1	100	0
+236	full sheet eggless pistachio cake	vanilla base with pistachio essence and pistachio nuts	220	4	1	100	0
+237	full sheet eggless nougat cake	vanilla base with caramalized sugar with cashew	190	4	1	100	0
+238	full sheet eggless mocha cake	chocolate with chocolate and coffee mix cream	190	4	1	100	0
+239	full sheet eggless coffee cake	vanilla base with coffee flavor	190	4	1	100	0
+240	full sheet eggless chocolate flakes cake	chocolate base with fresh chocolate cream	190	4	1	100	0
+241	full sheet eggless rasamalai cake	vanilla base with pieces of rasamalai 	190	4	1	100	0
+242	full sheet eggless fererro rocher chocolate cake	chocolate base with crushed hazelnut chocolate 	220	4	1	100	0
+243	full sheet eggless Chocolate delight cake	chocolate base with fresh chocolate cream and chocolate ganache	220	4	1	100	0
+244	full sheet eggless Raspberry cake	vanilla base with raspberries flavor	220	4	1	100	0
+245	full sheet eggless Dulce de leche cake	vanilla base caramel flavor	190	4	1	100	0
+246	full sheet eggless Gulab jamun cake	vanilla base with pieces of gulabjamun	220	4	1	100	0
+247	Butter Chicken Sandwich	butter chicken flavor chicken sandwiches	4.49	6	1	102	0
+248	Chicken Salad Sandwich	non spicy chicken chicken sandwiches	4.29	6	1	100	0
+249	Chicken Tikka Sandwich	chicken tikka flavor spicy sandwiches 	4.29	6	1	100	0
+250	Vegetable Sandwich	mixed vegetable sandwiches	3.99	6	1	100	0
+251	Egg Sandwich	boiled egg sandwich	3.99	6	1	100	0
+252	Large egglesss jeera cookie box	eggless cumin flavor cookies	10.99	7	1	100	0
+253	Large egglesss Salt cookie box	eggless plaint sweet and salt flavor cookies	10.99	7	1	100	0
+254	Large eggless pistachio cookie box	eggless pistachio butter cookies	10.99	7	1	100	0
+255	Large eggless crushed almond cookie box	eggless crushed almond butter cookies	10.99	7	1	100	0
+256	Large Jelly butter cookie box	jelly butter cookies	10.99	7	1	100	0
+257	Large Coconut cookie box	coconut flavor cookies	10.99	7	1	100	0
+258	Large eggless Almond Nankatai cookie box	almond with cardamom flavor cookies	10.99	7	1	100	0
+259	Large Tutti-frutti cookie box	butter cookies with mini fruit candies	10.99	7	1	100	0
+260	Large Chocolate cookie box	chocolate butter cookies	10.99	7	1	100	0
+261	Large Cashew cookie box	cashew butter cookies	10.99	7	1	100	0
+262	Large Whole almond cookie box	butter cookies with whole almond 	10.99	7	1	100	0
+263	Small egglesss jeera cookie box	eggless cumin flavor cookies	5.99	7	1	100	0
+264	Small egglesss Salt cookie box	eggless plaint sweet and salt flavor cookies	5.99	7	1	100	0
+265	Small eggless pistachio cookie box	eggless pistachio butter cookies	5.99	7	1	100	0
+266	Small eggless crushed almond cookie box	eggless crushed almond butter cookies	5.99	7	1	100	0
+267	Small Jelly butter cookie box	jelly butter cookies	5.99	7	1	100	0
+268	Small Coconut cookie box	coconut flavor cookies	5.99	7	1	100	0
+269	Small eggless Almond Nankatai cookie box	almond with cardamom flavor cookies	5.99	7	1	100	0
+270	Small Tutti-frutti cookie box	butter cookies with mini fruit candies	5.99	7	1	100	0
+271	Small Chocolate cookie box	chocolate butter cookies	5.99	7	1	100	0
+272	Small Cashew cookie box	cashew butter cookies	5.99	7	1	100	0
+273	Small Whole almond cookie box	butter cookies with whole almond 	5.99	7	1	100	0
+274	Large mixed cookie box	mixture of all cookies 	10.99	7	1	100	0
+275	small mixed cookie box	mixture of all cookies 	5.99	7	1	100	0
+276	Aaloo capsicum croissants	spicy aaloo filling croissants	3.49	8	1	101	0
+277	Chicken tikka croissants	chicken tikka flavor croissants	3.49	8	1	100	0
+278	Chili chicken croissants	spicy chunk chicken filling croissants	3.49	8	1	100	0
+279	Panner masala croissants	Spicy indian cottage cheese filling croissants	3.69	8	1	100	0
+280	Aaloo masala croissants	Spicy potato filling croissants	3.49	8	1	100	0
+281	Chicken Tikka Danish	Chicken tikka flavor spicy danish	2.99	9	1	101	0
+282	Vegetable Danish	Vegetable and cheese danish	2.79	9	1	101	0
+283	Apple juice	non alcholic beverages	1.89	10	1	100	0
+284	Badam milk	non alcholic beverages	2.39	10	1	100	0
+285	Chocolate milk	non alcholic beverages	1.99	10	1	100	0
+286	Coconut Water	non alcholic beverages	2.49	10	1	100	0
+287	Frooti mamgo	non alcholic beverages	1	10	1	100	0
+288	Limca	non alcholic beverages	2.39	10	1	100	0
+289	Mango juice	non alcholic beverages	1.89	10	1	100	0
+290	Mazza Juice 	non alcholic beverages	3.95	10	1	100	0
+291	Orange Juice	non alcholic beverages	1.89	10	1	100	0
+292	Pakola	non alcholic beverages	1.79	10	1	100	0
+293	Snapple	non alcholic beverages	2.49	10	1	100	0
+294	Soda	non alcholic beverages	1.5	10	1	100	0
+295	Tea	non alcholic beverages	1.5	10	1	100	0
+296	Thumps up	non alcholic beverages	2.5	10	1	100	0
+297	Water	non alcholic beverages	1	10	1	100	0
+298	4 pack Mawa cupcake	4 pieces of cupcake made from condensed milk	6	11	1	100	0
+299	Brownie	chocolate brownie	1.99	11	1	101	0
+300	Large round fruit cake	vanilla cake with fruit candies and almond flakes	8	11	1	100	0
+301	Large round plum cake	caramel cake with fruit candies and almond flakes	8.5	11	1	100	0
+302	Large round Tea cake	plain vanilla cake	7.5	11	1	100	0
+303	mawa cupcake	condensed milk cupcake	1.99	11	1	100	0
+304	mini fruit cake	vanilla cake with fruit candies and almond flakes	1.99	11	1	100	0
+305	mini marble cake	vanilla amd chocolate mix cake	1.99	11	1	101	0
+306	mini plum cake	caramel cake with fruit candies and almond flakes	1.99	11	1	100	0
+307	Bread crumbs	Bread crumbs	1.49	12	1	100	0
+308	Fruit toast	sweet toast with fruit candies	4.49	12	1	100	0
+309	Jeera butter	cumin flavor dry dough	5.99	12	1	100	0
+310	Khari box	plain puff pastry	5.99	12	1	100	0
+311	Milk Toast	sweet toast 	4.49	12	1	100	0
+312	plain toast	plain toast	4.49	12	1	100	0
+313	Aalo Capsicum panini	spicy potato sandwich made in house baked italian bread	6.99	13	1	100	0
+314	Chicken Tikka panini	spicy chicken tikka flavor chicken sandwich sandwich made in house baked italian bread	7.49	13	1	100	0
+315	Grilled chicken panini	non spicy chicken sandwich made in house baked italian bread	7.49	13	1	100	0
+316	Vegetable panini	mixed vegetable sandwich made in house baked italian bread	6.99	13	1	100	0
+317	Black forest pastry	chocolate base vanilla cream and crushed cherries	3.99	14	1	100	0
+318	Brownie pop	chococolate brownie pop	1.99	14	1	101	0
+319	Chocolate flakes pastry	fresh chocolate cream	3.99	14	1	100	0
+320	Chocolate pyramid pastry	fresh chocolate cream and chocolate ganache	4.99	14	1	100	0
+321	Chocolate trufle pastry	chocolate ganache	4.29	14	1	100	0
+322	Coffee Crunch pastry	coffee flavor and caramalized cashew	3.99	14	1	100	0
+323	Coffee pastry	coffee flavor 	3.99	14	1	100	0
+324	Cream roll	cream horn with vanilla cream	2.49	14	1	100	0
+325	Dulce de leche pastry	caramel flavor	3.99	14	1	100	0
+326	Eggless blackforest pastry	eggless chocolate base with vanilla cream and cherries	3.79	14	1	100	0
+327	Eggless pineapple pastry	eggless vanilla base with crushed pineapple	3.79	14	1	100	0
+328	Eggless mixfruit pastry	eggless vanilla base with mixed fruits 	3.79	14	1	102	0
+329	Ferrero Rocher chocolate pastry	chocolate base with crushed hazelnut chocolate 	4.99	14	1	100	0
+330	Kit kat pastry	chocolate base with chocolate wafer 	4.99	14	1	100	0
+331	Mango pastry	vanilla base with mango puree	3.99	14	1	100	0
+332	Mix fruit pastry	vanilla base with fresh fruits 	3.99	14	1	100	0
+333	Mocha pastry	chocolate base with coffee and chocolate flavor	3.99	14	1	100	0
+334	Nougat pastry	vanilla base with caramalized sugar with cashew	3.99	14	1	100	0
+335	Pineapple pastry	vanilla base with crushed pineapple	3.99	14	1	100	0
+336	Pistachio pastry	vanilla base with pistachio essence and pistachio nuts	3.99	14	1	102	0
+337	Rasamalai pastry	vanilla base with pieces of rasamalai 	4.99	14	1	100	0
+338	Strawberry pastry	vanilla base with fresh strawberries	3.99	14	1	100	0
+339	Specialty pastry	ocassional flavor	3.99	14	1	100	0
+340	Tres Leche pastry cup	three different kind of milk and vanilla base	4.49	14	1	102	0
+341	White chocolate raspberry pastry	vanilla base with chocolate cream and raspberry flavor	4.99	14	1	100	0
+342	Chicken Tikka pizza	spicy chicken tikka flovor pizza	3.49	15	1	100	0
+343	Chicken tikka Plait	spicy chicken tikka flovor large pizza	5.99	15	1	100	0
+344	Roasted chicken pizza	non spicy chicken pizza	3.49	15	1	100	0
+345	Vegetable pizza	mix vegetable pizza	3.49	15	1	100	0
+346	Aalo capsicum puff	Spicy potato filling puff pastry	3.49	16	1	101	0
+347	Chicken keema puff	grounded chicken filling puff pastry	3.59	16	1	100	0
+348	Chili chicken puff	spicy chunk chicken filling puff pastry	3.49	16	1	100	0
+349	Chicken tikka puff	spicy chicken tikka flavor filling puff pastry	3.49	16	1	100	0
+350	Chili paneer puff	spicy chunk indian cottage cheese filling puff pastry	3.69	16	1	100	0
+351	Egg puff	spicy boiled egg filling puff pastry	3.49	16	1	100	0
+352	Goat keema puff	spicy grounded goat filling puff pastry	4.29	16	1	102	0
+353	Masala aalo puff	spicy potato filling puff pastry	3.49	16	1	100	0
+354	Masala egg puff	Extra spicy boiled egg filling puff pastry	3.49	16	1	100	0
+355	Paneer masala puff	shredded indian cottage cheese filling puff pastry	3.69	16	1	100	0
+356	Schewan Chicken puff	schewan chicken flavor filling puff pastry	3.49	16	1	102	0
+357	Spicy BBQ Chicken puff	spicy bbq chicken flavor filling puff pastry	3.49	16	1	102	0
+358	Vegetable puff	mixed vegetable filling puff pastry	3.49	16	1	100	0
+359	White chicken puff	non spicy chicken flavor filling puff pastry	3.49	16	1	100	0
+360	Aalo Masala wrap	grilled spicy potato wrapped in house baked tortilla	6.99	17	1	100	0
+361	Chana Masala wrap	spicy chickpeas wrapped in house baked tortilla	6.99	17	1	102	0
+362	Chicken tikka wrap	spicy grounded chicken wrapped in house baked tortilla	7.49	17	1	100	0
+363	Chili chicken wrap	spicy gravy chunk chicken wrapped in house baked tortilla 	7.49	17	1	100	0
+364	Chili paneer wrap	spicy indian cottage cheese wrapped in house baked tortilla	7.99	17	1	100	0
+365	Grilled chicken wrap	non spicy chicken wrapped in house baked tortilla	7.49	17	1	100	0
+366	Paneer Tikka wrap	Indian cottage cheese wrapped in house baked tortilla	7.49	17	1	102	0
+367	Vegetable wrap	Mixed vegatable wrapped in house baked tortilla	6.99	17	1	100	0
+368	Butter chicken sub	butter chicken sub sandwich	4.99	18	1	102	0
+369	Chicken Tikka sub	chicken tikka flavor sub sandwich	4.99	18	1	102	0
+370	Chicken quiche	house special chicken flavor quiche	3.49	19	1	100	0
+371	Chicken tikka quiche	chicken tikka flavor quiche	3.49	19	1	100	0
+372	Chili chicken pie	spicy chicken pie	3.49	19	1	101	0
+373	Masala aalo pie	spicy potato pie	3.49	19	1	101	0
+374	Roasted chicken pie	non spicy chicken pie	3.49	19	1	101	0
+375	Siracha Chicken pie	sriracha spicy chicken pie	3.49	19	1	101	0

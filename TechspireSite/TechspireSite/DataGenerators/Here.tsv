@@ -1,0 +1,381 @@
+0	1	2	3	Name	Desc	Price	Type	Status	Ban
+1	2010-01-01	100	1	Bombay Nan Bread	Indian large round eggless bread	2.99	1	1	
+2	2010-01-01	101	1	Bomaby Nan Bread (small-2pcs)	Indian small round eggless bread	2.99	1	1	
+3	2010-01-01	102	2	Fruit bread	Sweet eggless bread with fruit candies	3.49	1	1	
+4	2010-01-01	103	1	Fruit bun	Sweet eggless bun with fruit candies	3.49	1	1	
+5	2010-01-01	104	1	Milk bread	Sweet eggles bread	3.49	1	1	
+6	2010-01-01	104	2	Milk bread	Sweet eggles bread	3.49	1	1	
+7	2010-01-01	105	1	Pav bread	Plain small 6pcs eggless bun	3.49	1	1	
+8	2010-01-01	105	2	Pav bread	Plain small 6pcs eggless bun	3.49	1	1	
+9	2010-01-01	106	1	Plain bread	Plain eggless bread	2.49	1	1	
+10	2010-01-01	107	2	Sandwich bread	Large plain eggless bread	4.49	1	1	
+11	2010-01-01	108	1	Wheat bread	Partial wheat eggless bread(not 100%)	3.99	1	1	
+12	2010-01-01	108	2	Wheat bread	Partial wheat eggless bread(not 100%)	3.99	1	1	
+13	2010-01-01	109	1	Grilled cheese sandwich	Mozarella cheese sandwich made with house baked  sandwich bread	4.99	2	1	
+14	2010-01-01	110	1	Pav bhaji	Spicy potato gravy with house baked pav bread	6.99	2	1	
+15	2010-01-01	111	2	Vada Pav	Spicy potato patties with house baked pav bread	5	2	1	
+16	2010-01-01	112	1	Vegetable grilled sandwich	Cheese and mixed vegetable sandwich in house baked sandwich bread	6.49	2	1	
+17	2010-01-01	113	1	Extra pav	butteredgrilled house baked bread	1.29	2	1	
+18	2010-01-01	113	2	Extra pav	butteredgrilled house baked bread	1.29	2	1	
+19	2010-01-01	114	1	Aalu Capsicum bun	Spicy potato filled bun	3.49	3	1	
+20	2010-01-01	115	2	Chicken Seekh Kabob bun	Spicy chicken seekh kabob filled bun	3.49	3	1	
+21	2010-01-01	116	2	Chicken Tikka Bun	Spicy grounded chicken tikka flavor filled bun	3.49	3	1	
+22	2010-01-01	117	1	Keema Bun	Spicy grounded goat filled bun	4.99	3	1	
+23	2010-01-01	118	1	Panner Masala Bun	Spicy indian cottage cheese filled bun	3.99	3	1	
+24	2010-01-01	119	1	"8"" round blackforest cake"	chocolate base with vanilla cream and crushed cherries	25	4	1	
+25	2010-01-01	119	2	"8"" round blackforest cake"	chocolate base with vanilla cream and crushed cherries	25	4	1	
+26	2010-01-01	120	2	"8"" round pineapple cake"	vanilla base with vanilla cream and crushed pineapple	25	4	1	
+27	2010-01-01	121	1	"8"" round mix fruit cake"	vanilla base with fresh fruits 	25	4	1	
+28	2010-01-01	121	2	"8"" round mix fruit cake"	vanilla base with fresh fruits 	25	4	1	
+29	2010-01-01	122	1	"8"" round fresh strawberry cake"	vanilla base with fresh strawberries	30	4	1	
+30	2010-01-01	122	2	"8"" round fresh strawberry cake"	vanilla base with fresh strawberries	30	4	1	
+31	2010-01-01	123	1	"8"" round mango cake"	vanilla base with mango puree	30	4	1	
+32	2010-01-01	124	2	"8"" round pistachio cake"	vanilla base with pistachio essence and pistachio nuts	35	4	1	
+33	2010-01-01	125	1	"8"" round nougat cake"	vanilla base with caramalized sugar with cashew	30	4	1	
+34	2010-01-01	125	2	"8"" round nougat cake"	vanilla base with caramalized sugar with cashew	30	4	1	
+35	2010-01-01	126	2	"8"" round mocha cake"	chocolate with chocolate and coffee mix cream	30	4	1	
+36	2010-01-01	127	2	"8"" round coffee cake"	vanilla base with coffee flavor	30	4	1	
+37	2010-01-01	128	2	"8"" round chocolate flakes cake"	chocolate base with fresh chocolate cream	30	4	1	
+38	2010-01-01	129	1	"8"" round rasamalai cake"	vanilla base with pieces of rasamalai 	35	4	1	
+39	2010-01-01	130	1	"8"" round fererro rocher chocolate cake"	chocolate base with crushed hazelnut chocolate 	35	4	1	
+40	2010-01-01	131	2	"8"" round Chocolate delight cake"	chocolate base with fresh chocolate cream and chocolate ganache	35	4	1	
+41	2010-01-01	132	1	"8"" round Raspberry cake"	vanilla base with raspberries flavor	35	4	1	
+42	2010-01-01	133	1	"8"" Dulce de leche cake"	vanilla base caramel flavor	30	4	1	
+43	2010-01-01	133	2	"8"" Dulce de leche cake"	vanilla base caramel flavor	30	4	1	
+44	2010-01-01	134	1	"8"" Gulab jamun cake"	vanilla base with pieces of gulabjamun	35	4	1	
+45	2010-01-01	134	2	"8"" Gulab jamun cake"	vanilla base with pieces of gulabjamun	35	4	1	
+46	2010-01-01	135	2	"8"" round eggless blackforest cake"	chocolate base with vanilla cream and crushed cherries	30	4	1	
+47	2010-01-01	136	1	"8"" round eggless pineapple cake"	vanilla base with vanilla cream and crushed pineapple	30	4	1	
+48	2010-01-01	136	2	"8"" round eggless pineapple cake"	vanilla base with vanilla cream and crushed pineapple	30	4	1	
+49	2010-01-01	137	1	"8"" round eggless mix fruit cake"	vanilla base with fresh fruits 	30	4	1	
+50	2010-01-01	138	2	"8"" round eggless fresh strawberry cake"	vanilla base with fresh strawberries	35	4	1	
+51	2010-01-01	139	2	"8"" round eggless mango cake"	vanilla base with mango puree	35	4	1	
+52	2010-01-01	140	1	"8"" round eggless pistachio cake"	vanilla base with pistachio essence and pistachio nuts	40	4	1	
+53	2010-01-01	140	2	"8"" round eggless pistachio cake"	vanilla base with pistachio essence and pistachio nuts	40	4	1	
+54	2010-01-01	141	1	"8"" round eggless nougat cake"	vanilla base with caramalized sugar with cashew	35	4	1	
+55	2010-01-01	141	2	"8"" round eggless nougat cake"	vanilla base with caramalized sugar with cashew	35	4	1	
+56	2010-01-01	142	2	"8"" round eggless mocha cake"	chocolate with chocolate and coffee mix cream	35	4	1	
+57	2010-01-01	143	2	"8"" round eggless coffee cake"	vanilla base with coffee flavor	35	4	1	
+58	2010-01-01	144	1	"8"" round eggless chocolate flakes cake"	chocolate base with fresh chocolate cream	35	4	1	
+59	2010-01-01	145	2	"8"" round eggless rasamalai cake"	vanilla base with pieces of rasamalai 	40	4	1	
+60	2010-01-01	146	2	"8"" round eggless fererro rocher chocolate cake"	chocolate base with crushed hazelnut chocolate 	40	4	1	
+61	2010-01-01	147	1	"8"" round eggless Chocolate delight cake"	chocolate base with fresh chocolate cream and chocolate ganache	40	4	1	
+62	2010-01-01	148	2	"8"" round eggless Raspberry cake"	vanilla base with raspberries flavor	40	4	1	
+63	2010-01-01	149	2	"8"" round eggless Dulce de leche cake"	vanilla base caramel flavor	35	4	1	
+64	2010-01-01	150	1	"8"" round eggless Gulab jamun cake"	vanilla base with pieces of gulabjamun	40	4	1	
+65	2010-01-01	150	2	"8"" round eggless Gulab jamun cake"	vanilla base with pieces of gulabjamun	40	4	1	
+66	2010-01-01	151	1	1/4 sheet blackforest cake	chocolate base with vanilla cream and crushed cherries	45	4	1	
+67	2010-01-01	152	1	1/4 sheet pineapple cake	vanilla base with vanilla cream and crushed pineapple	45	4	1	
+68	2010-01-01	152	2	1/4 sheet pineapple cake	vanilla base with vanilla cream and crushed pineapple	45	4	1	
+69	2010-01-01	153	1	1/4 sheet mix fruit cake	vanilla base with fresh fruits 	45	4	1	
+70	2010-01-01	154	1	1/4 sheet fresh strawberry cake	vanilla base with fresh strawberries	55	4	1	
+71	2010-01-01	155	1	1/4 sheet mango cake	vanilla base with mango puree	55	4	1	
+72	2010-01-01	155	2	1/4 sheet mango cake	vanilla base with mango puree	55	4	1	
+73	2010-01-01	156	1	1/4 sheet pistachio cake	vanilla base with pistachio essence and pistachio nuts	65	4	1	
+74	2010-01-01	156	2	1/4 sheet pistachio cake	vanilla base with pistachio essence and pistachio nuts	65	4	1	
+75	2010-01-01	157	1	1/4 sheet nougat cake	vanilla base with caramalized sugar with cashew	55	4	1	
+76	2010-01-01	158	1	1/4 sheet mocha cake	chocolate with chocolate and coffee mix cream	55	4	1	
+77	2010-01-01	159	2	1/4 sheet coffee cake	vanilla base with coffee flavor	55	4	1	
+78	2010-01-01	160	1	1/4 sheet chocolate flakes cake	chocolate base with fresh chocolate cream	55	4	1	
+79	2010-01-01	160	2	1/4 sheet chocolate flakes cake	chocolate base with fresh chocolate cream	55	4	1	
+80	2010-01-01	161	2	1/4 sheet rasamalai cake	vanilla base with pieces of rasamalai 	65	4	1	
+81	2010-01-01	162	1	1/4 sheet fererro rocher chocolate cake	chocolate base with crushed hazelnut chocolate 	65	4	1	
+82	2010-01-01	162	2	1/4 sheet fererro rocher chocolate cake	chocolate base with crushed hazelnut chocolate 	65	4	1	
+83	2010-01-01	163	1	1/4 sheet Chocolate delight cake	chocolate base with fresh chocolate cream and chocolate ganache	65	4	1	
+84	2010-01-01	164	1	1/4 sheet Raspberry cake	vanilla base with raspberries flavor	65	4	1	
+85	2010-01-01	164	2	1/4 sheet Raspberry cake	vanilla base with raspberries flavor	65	4	1	
+86	2010-01-01	165	1	1/4 sheet de leche cake	vanilla base caramel flavor	55	4	1	
+87	2010-01-01	166	2	1/4 sheet Gulab jamun cake	vanilla base with pieces of gulabjamun	65	4	1	
+88	2010-01-01	167	2	1/4 sheet eggless blackforest cake	chocolate base with vanilla cream and crushed cherries	55	4	1	
+89	2010-01-01	168	1	1/4 sheet eggless pineapple cake	vanilla base with vanilla cream and crushed pineapple	55	4	1	
+90	2010-01-01	168	2	1/4 sheet eggless pineapple cake	vanilla base with vanilla cream and crushed pineapple	55	4	1	
+91	2010-01-01	169	1	1/4 sheet eggless mix fruit cake	vanilla base with fresh fruits 	55	4	1	
+92	2010-01-01	169	2	1/4 sheet eggless mix fruit cake	vanilla base with fresh fruits 	55	4	1	
+93	2010-01-01	170	1	1/4 sheet eggless fresh strawberry cake	vanilla base with fresh strawberries	65	4	1	
+94	2010-01-01	170	2	1/4 sheet eggless fresh strawberry cake	vanilla base with fresh strawberries	65	4	1	
+95	2010-01-01	171	2	1/4 sheeteggless mango cake	vanilla base with mango puree	65	4	1	
+96	2010-01-01	172	1	1/4 sheet eggless pistachio cake	vanilla base with pistachio essence and pistachio nuts	75	4	1	
+97	2010-01-01	173	1	1/4 sheet eggless nougat cake	vanilla base with caramalized sugar with cashew	65	4	1	
+98	2010-01-01	174	2	1/4 sheet eggless mocha cake	chocolate with chocolate and coffee mix cream	65	4	1	
+99	2010-01-01	175	1	1/4 sheet eggless coffee cake	vanilla base with coffee flavor	65	4	1	
+100	2010-01-01	175	2	1/4 sheet eggless coffee cake	vanilla base with coffee flavor	65	4	1	
+101	2010-01-01	176	2	1/4 sheet eggless chocolate flakes cake	chocolate base with fresh chocolate cream	65	4	1	
+102	2010-01-01	177	2	1/4 sheet eggless rasamalai cake	vanilla base with pieces of rasamalai 	75	4	1	
+103	2010-01-01	178	2	1/4 sheet eggless fererro rocher chocolate cake	chocolate base with crushed hazelnut chocolate 	75	4	1	
+104	2010-01-01	179	1	1/4 sheet eggless Chocolate delight cake	chocolate base with fresh chocolate cream and chocolate ganache	75	4	1	
+105	2010-01-01	180	1	1/4 sheet eggless Raspberry cake	vanilla base with raspberries flavor	75	4	1	
+106	2010-01-01	180	2	1/4 sheet eggless Raspberry cake	vanilla base with raspberries flavor	75	4	1	
+107	2010-01-01	181	1	1/4 sheet eggless Dulce de leche cake	vanilla base caramel flavor	65	4	1	
+108	2010-01-01	181	2	1/4 sheet eggless Dulce de leche cake	vanilla base caramel flavor	65	4	1	
+109	2010-01-01	182	2	1/4 sheet eggless Gulab jamun cake	vanilla base with pieces of gulabjamun	75	4	1	
+110	2010-01-01	183	1	1/2 sheet blackforest cake	chocolate base with vanilla cream and crushed cherries	70	4	1	
+111	2010-01-01	183	2	1/2 sheet blackforest cake	chocolate base with vanilla cream and crushed cherries	70	4	1	
+112	2010-01-01	184	1	1/2 sheet pineapple cake	vanilla base with vanilla cream and crushed pineapple	70	4	1	
+113	2010-01-01	184	2	1/2 sheet pineapple cake	vanilla base with vanilla cream and crushed pineapple	70	4	1	
+114	2010-01-01	185	1	1/2 sheet mix fruit cake	vanilla base with fresh fruits 	70	4	1	
+115	2010-01-01	185	2	1/2 sheet mix fruit cake	vanilla base with fresh fruits 	70	4	1	
+116	2010-01-01	186	2	1/2 sheet fresh strawberry cake	vanilla base with fresh strawberries	85	4	1	
+117	2010-01-01	187	2	1/2 sheet mango cake	vanilla base with mango puree	85	4	1	
+118	2010-01-01	188	1	1/2 sheet pistachio cake	vanilla base with pistachio essence and pistachio nuts	100	4	1	
+119	2010-01-01	188	2	1/2 sheet pistachio cake	vanilla base with pistachio essence and pistachio nuts	100	4	1	
+120	2010-01-01	189	1	1/2 sheet nougat cake	vanilla base with caramalized sugar with cashew	85	4	1	
+121	2010-01-01	190	1	1/2 sheet mocha cake	chocolate with chocolate and coffee mix cream	85	4	1	
+122	2010-01-01	190	2	1/2 sheet mocha cake	chocolate with chocolate and coffee mix cream	85	4	1	
+123	2010-01-01	191	2	1/2 sheet coffee cake	vanilla base with coffee flavor	85	4	1	
+124	2010-01-01	192	1	1/2 sheet chocolate flakes cake	chocolate base with fresh chocolate cream	85	4	1	
+125	2010-01-01	192	2	1/2 sheet chocolate flakes cake	chocolate base with fresh chocolate cream	85	4	1	
+126	2010-01-01	193	1	1/2 sheet rasamalai cake	vanilla base with pieces of rasamalai 	100	4	1	
+127	2010-01-01	194	1	1/2 sheet fererro rocher chocolate cake	chocolate base with crushed hazelnut chocolate 	100	4	1	
+128	2010-01-01	194	2	1/2 sheet fererro rocher chocolate cake	chocolate base with crushed hazelnut chocolate 	100	4	1	
+129	2010-01-01	195	1	1/2 sheet Chocolate delight cake	chocolate base with fresh chocolate cream and chocolate ganache	100	4	1	
+130	2010-01-01	195	2	1/2 sheet Chocolate delight cake	chocolate base with fresh chocolate cream and chocolate ganache	100	4	1	
+131	2010-01-01	196	1	1/2 sheet Raspberry cake	vanilla base with raspberries flavor	100	4	1	
+132	2010-01-01	196	2	1/2 sheet Raspberry cake	vanilla base with raspberries flavor	100	4	1	
+133	2010-01-01	197	1	1/2 sheet de leche cake	vanilla base caramel flavor	85	4	1	
+134	2010-01-01	197	2	1/2 sheet de leche cake	vanilla base caramel flavor	85	4	1	
+135	2010-01-01	198	1	1/2 sheet Gulab jamun cake	vanilla base with pieces of gulabjamun	100	4	1	
+136	2010-01-01	198	2	1/2 sheet Gulab jamun cake	vanilla base with pieces of gulabjamun	100	4	1	
+137	2010-01-01	199	2	1/2 sheet eggless blackforest cake	chocolate base with vanilla cream and crushed cherries	85	4	1	
+138	2010-01-01	200	2	1/2 sheet eggless pineapple cake	vanilla base with vanilla cream and crushed pineapple	85	4	1	
+139	2010-01-01	201	1	1/2 sheet eggless mix fruit cake	vanilla base with fresh fruits 	85	4	1	
+140	2010-01-01	201	2	1/2 sheet eggless mix fruit cake	vanilla base with fresh fruits 	85	4	1	
+141	2010-01-01	202	1	1/2 sheet eggless fresh strawberry cake	vanilla base with fresh strawberries	100	4	1	
+142	2010-01-01	203	1	1/2 sheeteggless mango cake	vanilla base with mango puree	100	4	1	
+143	2010-01-01	203	2	1/2 sheeteggless mango cake	vanilla base with mango puree	100	4	1	
+144	2010-01-01	204	1	1/2 sheet eggless pistachio cake	vanilla base with pistachio essence and pistachio nuts	115	4	1	
+145	2010-01-01	204	2	1/2 sheet eggless pistachio cake	vanilla base with pistachio essence and pistachio nuts	115	4	1	
+146	2010-01-01	205	1	1/2 sheet eggless nougat cake	vanilla base with caramalized sugar with cashew	100	4	1	
+147	2010-01-01	205	2	1/2 sheet eggless nougat cake	vanilla base with caramalized sugar with cashew	100	4	1	
+148	2010-01-01	206	1	1/2 sheet eggless mocha cake	chocolate with chocolate and coffee mix cream	100	4	1	
+149	2010-01-01	207	2	1/2 sheet eggless coffee cake	vanilla base with coffee flavor	100	4	1	
+150	2010-01-01	208	1	1/2 sheet eggless chocolate flakes cake	chocolate base with fresh chocolate cream	100	4	1	
+151	2010-01-01	209	1	1/2 sheet eggless rasamalai cake	vanilla base with pieces of rasamalai 	115	4	1	
+152	2010-01-01	209	2	1/2 sheet eggless rasamalai cake	vanilla base with pieces of rasamalai 	115	4	1	
+153	2010-01-01	210	1	1/2 sheet eggless fererro rocher chocolate cake	chocolate base with crushed hazelnut chocolate 	115	4	1	
+154	2010-01-01	210	2	1/2 sheet eggless fererro rocher chocolate cake	chocolate base with crushed hazelnut chocolate 	115	4	1	
+155	2010-01-01	211	1	1/2 sheet eggless Chocolate delight cake	chocolate base with fresh chocolate cream and chocolate ganache	115	4	1	
+156	2010-01-01	211	2	1/2 sheet eggless Chocolate delight cake	chocolate base with fresh chocolate cream and chocolate ganache	115	4	1	
+157	2010-01-01	212	1	1/2 sheet eggless Raspberry cake	vanilla base with raspberries flavor	115	4	1	
+158	2010-01-01	212	2	1/2 sheet eggless Raspberry cake	vanilla base with raspberries flavor	115	4	1	
+159	2010-01-01	213	2	1/2 sheet eggless Dulce de leche cake	vanilla base caramel flavor	100	4	1	
+160	2010-01-01	214	2	1/2 sheet eggless Gulab jamun cake	vanilla base with pieces of gulabjamun	115	4	1	
+161	2010-01-01	215	1	full sheet blackforest cake	chocolate base with vanilla cream and crushed cherries	130	4	1	
+162	2010-01-01	215	2	full sheet blackforest cake	chocolate base with vanilla cream and crushed cherries	130	4	1	
+163	2010-01-01	216	1	full sheet pineapple cake	vanilla base with vanilla cream and crushed pineapple	130	4	1	
+164	2010-01-01	217	1	full sheet mix fruit cake	vanilla base with fresh fruits 	130	4	1	
+165	2010-01-01	217	2	full sheet mix fruit cake	vanilla base with fresh fruits 	130	4	1	
+166	2010-01-01	218	2	full sheet fresh strawberry cake	vanilla base with fresh strawberries	160	4	1	
+167	2010-01-01	219	1	full sheet mango cake	vanilla base with mango puree	160	4	1	
+168	2010-01-01	219	2	full sheet mango cake	vanilla base with mango puree	160	4	1	
+169	2010-01-01	220	2	full sheet pistachio cake	vanilla base with pistachio essence and pistachio nuts	190	4	1	
+170	2010-01-01	221	1	full sheet nougat cake	vanilla base with caramalized sugar with cashew	160	4	1	
+171	2010-01-01	221	2	full sheet nougat cake	vanilla base with caramalized sugar with cashew	160	4	1	
+172	2010-01-01	222	1	full sheet mocha cake	chocolate with chocolate and coffee mix cream	160	4	1	
+173	2010-01-01	223	2	full sheet coffee cake	vanilla base with coffee flavor	160	4	1	
+174	2010-01-01	224	2	full sheet chocolate flakes cake	chocolate base with fresh chocolate cream	160	4	1	
+175	2010-01-01	225	1	full sheet rasamalai cake	vanilla base with pieces of rasamalai 	190	4	1	
+176	2010-01-01	226	1	full sheet fererro rocher chocolate cake	chocolate base with crushed hazelnut chocolate 	190	4	1	
+177	2010-01-01	226	2	full sheet fererro rocher chocolate cake	chocolate base with crushed hazelnut chocolate 	190	4	1	
+178	2010-01-01	227	1	full sheet Chocolate delight cake	chocolate base with fresh chocolate cream and chocolate ganache	190	4	1	
+179	2010-01-01	227	2	full sheet Chocolate delight cake	chocolate base with fresh chocolate cream and chocolate ganache	190	4	1	
+180	2010-01-01	228	1	full sheet Raspberry cake	vanilla base with raspberries flavor	190	4	1	
+181	2010-01-01	228	2	full sheet Raspberry cake	vanilla base with raspberries flavor	190	4	1	
+182	2010-01-01	229	1	full sheet de leche cake	vanilla base caramel flavor	160	4	1	
+183	2010-01-01	229	2	full sheet de leche cake	vanilla base caramel flavor	160	4	1	
+184	2010-01-01	230	1	full sheet Gulab jamun cake	vanilla base with pieces of gulabjamun	190	4	1	
+185	2010-01-01	230	2	full sheet Gulab jamun cake	vanilla base with pieces of gulabjamun	190	4	1	
+186	2010-01-01	231	2	full sheet eggless blackforest cake	chocolate base with vanilla cream and crushed cherries	160	4	1	
+187	2010-01-01	232	1	full sheet eggless pineapple cake	vanilla base with vanilla cream and crushed pineapple	160	4	1	
+188	2010-01-01	232	2	full sheet eggless pineapple cake	vanilla base with vanilla cream and crushed pineapple	160	4	1	
+189	2010-01-01	233	1	full sheet eggless mix fruit cake	vanilla base with fresh fruits 	160	4	1	
+190	2010-01-01	233	2	full sheet eggless mix fruit cake	vanilla base with fresh fruits 	160	4	1	
+191	2010-01-01	234	2	full sheet eggless fresh strawberry cake	vanilla base with fresh strawberries	190	4	1	
+192	2010-01-01	235	1	full sheeteggless mango cake	vanilla base with mango puree	190	4	1	
+193	2010-01-01	235	2	full sheeteggless mango cake	vanilla base with mango puree	190	4	1	
+194	2010-01-01	236	1	full sheet eggless pistachio cake	vanilla base with pistachio essence and pistachio nuts	220	4	1	
+195	2010-01-01	236	2	full sheet eggless pistachio cake	vanilla base with pistachio essence and pistachio nuts	220	4	1	
+196	2010-01-01	237	2	full sheet eggless nougat cake	vanilla base with caramalized sugar with cashew	190	4	1	
+197	2010-01-01	238	1	full sheet eggless mocha cake	chocolate with chocolate and coffee mix cream	190	4	1	
+198	2010-01-01	238	2	full sheet eggless mocha cake	chocolate with chocolate and coffee mix cream	190	4	1	
+199	2010-01-01	239	1	full sheet eggless coffee cake	vanilla base with coffee flavor	190	4	1	
+200	2010-01-01	239	2	full sheet eggless coffee cake	vanilla base with coffee flavor	190	4	1	
+201	2010-01-01	240	2	full sheet eggless chocolate flakes cake	chocolate base with fresh chocolate cream	190	4	1	
+202	2010-01-01	241	1	full sheet eggless rasamalai cake	vanilla base with pieces of rasamalai 	190	4	1	
+203	2010-01-01	242	1	full sheet eggless fererro rocher chocolate cake	chocolate base with crushed hazelnut chocolate 	220	4	1	
+204	2010-01-01	242	2	full sheet eggless fererro rocher chocolate cake	chocolate base with crushed hazelnut chocolate 	220	4	1	
+205	2010-01-01	243	2	full sheet eggless Chocolate delight cake	chocolate base with fresh chocolate cream and chocolate ganache	220	4	1	
+206	2010-01-01	244	1	full sheet eggless Raspberry cake	vanilla base with raspberries flavor	220	4	1	
+207	2010-01-01	245	1	full sheet eggless Dulce de leche cake	vanilla base caramel flavor	190	4	1	
+208	2010-01-01	246	1	full sheet eggless Gulab jamun cake	vanilla base with pieces of gulabjamun	220	4	1	
+209	2010-01-01	247	1	Butter Chicken Sandwich	butter chicken flavor chicken sandwiches	4.49	6	1	
+210	2010-01-01	247	2	Butter Chicken Sandwich	butter chicken flavor chicken sandwiches	4.49	6	1	
+211	2010-01-01	248	1	Chicken Salad Sandwich	non spicy chicken chicken sandwiches	4.29	6	1	
+212	2010-01-01	249	2	Chicken Tikka Sandwich	chicken tikka flavor spicy sandwiches 	4.29	6	1	
+213	2010-01-01	250	1	Vegetable Sandwich	mixed vegetable sandwiches	3.99	6	1	
+214	2010-01-01	251	2	Egg Sandwich	boiled egg sandwich	3.99	6	1	
+215	2010-01-01	252	2	Large egglesss jeera cookie box	eggless cumin flavor cookies	10.99	7	1	
+216	2010-01-01	253	1	Large egglesss Salt cookie box	eggless plaint sweet and salt flavor cookies	10.99	7	1	
+217	2010-01-01	253	2	Large egglesss Salt cookie box	eggless plaint sweet and salt flavor cookies	10.99	7	1	
+218	2010-01-01	254	2	Large eggless pistachio cookie box	eggless pistachio butter cookies	10.99	7	1	
+219	2010-01-01	255	2	Large eggless crushed almond cookie box	eggless crushed almond butter cookies	10.99	7	1	
+220	2010-01-01	256	1	Large Jelly butter cookie box	jelly butter cookies	10.99	7	1	
+221	2010-01-01	257	2	Large Coconut cookie box	coconut flavor cookies	10.99	7	1	
+222	2010-01-01	258	1	Large eggless Almond Nankatai cookie box	almond with cardamom flavor cookies	10.99	7	1	
+223	2010-01-01	259	2	Large Tutti-frutti cookie box	butter cookies with mini fruit candies	10.99	7	1	
+224	2010-01-01	260	1	Large Chocolate cookie box	chocolate butter cookies	10.99	7	1	
+225	2010-01-01	261	2	Large Cashew cookie box	cashew butter cookies	10.99	7	1	
+226	2010-01-01	262	1	Large Whole almond cookie box	butter cookies with whole almond 	10.99	7	1	
+227	2010-01-01	262	2	Large Whole almond cookie box	butter cookies with whole almond 	10.99	7	1	
+228	2010-01-01	263	1	Small egglesss jeera cookie box	eggless cumin flavor cookies	5.99	7	1	
+229	2010-01-01	263	2	Small egglesss jeera cookie box	eggless cumin flavor cookies	5.99	7	1	
+230	2010-01-01	264	1	Small egglesss Salt cookie box	eggless plaint sweet and salt flavor cookies	5.99	7	1	
+231	2010-01-01	265	2	Small eggless pistachio cookie box	eggless pistachio butter cookies	5.99	7	1	
+232	2010-01-01	266	1	Small eggless crushed almond cookie box	eggless crushed almond butter cookies	5.99	7	1	
+233	2010-01-01	267	2	Small Jelly butter cookie box	jelly butter cookies	5.99	7	1	
+234	2010-01-01	268	1	Small Coconut cookie box	coconut flavor cookies	5.99	7	1	
+235	2010-01-01	269	1	Small eggless Almond Nankatai cookie box	almond with cardamom flavor cookies	5.99	7	1	
+236	2010-01-01	269	2	Small eggless Almond Nankatai cookie box	almond with cardamom flavor cookies	5.99	7	1	
+237	2010-01-01	270	1	Small Tutti-frutti cookie box	butter cookies with mini fruit candies	5.99	7	1	
+238	2010-01-01	270	2	Small Tutti-frutti cookie box	butter cookies with mini fruit candies	5.99	7	1	
+239	2010-01-01	271	1	Small Chocolate cookie box	chocolate butter cookies	5.99	7	1	
+240	2010-01-01	271	2	Small Chocolate cookie box	chocolate butter cookies	5.99	7	1	
+241	2010-01-01	272	1	Small Cashew cookie box	cashew butter cookies	5.99	7	1	
+242	2010-01-01	272	2	Small Cashew cookie box	cashew butter cookies	5.99	7	1	
+243	2010-01-01	273	2	Small Whole almond cookie box	butter cookies with whole almond 	5.99	7	1	
+244	2010-01-01	274	2	Large mixed cookie box	mixture of all cookies 	10.99	7	1	
+245	2010-01-01	275	1	small mixed cookie box	mixture of all cookies 	5.99	7	1	
+246	2010-01-01	276	1	Aaloo capsicum croissants	spicy aaloo filling croissants	3.49	8	1	
+247	2010-01-01	276	2	Aaloo capsicum croissants	spicy aaloo filling croissants	3.49	8	1	
+248	2010-01-01	277	1	Chicken tikka croissants	chicken tikka flavor croissants	3.49	8	1	
+249	2010-01-01	278	1	Chili chicken croissants	spicy chunk chicken filling croissants	3.49	8	1	
+250	2010-01-01	278	2	Chili chicken croissants	spicy chunk chicken filling croissants	3.49	8	1	
+251	2010-01-01	279	2	Panner masala croissants	Spicy indian cottage cheese filling croissants	3.69	8	1	
+252	2010-01-01	280	1	Aaloo masala croissants	Spicy potato filling croissants	3.49	8	1	
+253	2010-01-01	281	1	Chicken Tikka Danish	Chicken tikka flavor spicy danish	2.99	9	1	
+254	2010-01-01	282	1	Vegetable Danish	Vegetable and cheese danish	2.79	9	1	
+255	2010-01-01	282	2	Vegetable Danish	Vegetable and cheese danish	2.79	9	1	
+256	2010-01-01	283	1	Apple juice	non alcholic beverages	1.89	10	1	
+257	2010-01-01	283	2	Apple juice	non alcholic beverages	1.89	10	1	
+258	2010-01-01	284	1	Badam milk	non alcholic beverages	2.39	10	1	
+259	2010-01-01	284	2	Badam milk	non alcholic beverages	2.39	10	1	
+260	2010-01-01	285	2	Chocolate milk	non alcholic beverages	1.99	10	1	
+261	2010-01-01	286	2	Coconut Water	non alcholic beverages	2.49	10	1	
+262	2010-01-01	287	1	Frooti mamgo	non alcholic beverages	1	10	1	
+263	2010-01-01	287	2	Frooti mamgo	non alcholic beverages	1	10	1	
+264	2010-01-01	288	2	Limca	non alcholic beverages	2.39	10	1	
+265	2010-01-01	289	2	Mango juice	non alcholic beverages	1.89	10	1	
+266	2010-01-01	290	2	Mazza Juice 	non alcholic beverages	3.95	10	1	
+267	2010-01-01	291	1	Orange Juice	non alcholic beverages	1.89	10	1	
+268	2010-01-01	291	2	Orange Juice	non alcholic beverages	1.89	10	1	
+269	2010-01-01	292	1	Pakola	non alcholic beverages	1.79	10	1	
+270	2010-01-01	292	2	Pakola	non alcholic beverages	1.79	10	1	
+271	2010-01-01	293	1	Snapple	non alcholic beverages	2.49	10	1	
+272	2010-01-01	294	1	Soda	non alcholic beverages	1.5	10	1	
+273	2010-01-01	294	2	Soda	non alcholic beverages	1.5	10	1	
+274	2010-01-01	295	2	Tea	non alcholic beverages	1.5	10	1	
+275	2010-01-01	296	2	Thumps up	non alcholic beverages	2.5	10	1	
+276	2010-01-01	297	2	Water	non alcholic beverages	1	10	1	
+277	2010-01-01	298	1	4 pack Mawa cupcake	4 pieces of cupcake made from condensed milk	6	11	1	
+278	2010-01-01	299	2	Brownie	chocolate brownie	1.99	11	1	
+279	2010-01-01	300	2	Large round fruit cake	vanilla cake with fruit candies and almond flakes	8	11	1	
+280	2010-01-01	301	2	Large round plum cake	caramel cake with fruit candies and almond flakes	8.5	11	1	
+281	2010-01-01	302	2	Large round Tea cake	plain vanilla cake	7.5	11	1	
+282	2010-01-01	303	1	mawa cupcake	condensed milk cupcake	1.99	11	1	
+283	2010-01-01	303	2	mawa cupcake	condensed milk cupcake	1.99	11	1	
+284	2010-01-01	304	1	mini fruit cake	vanilla cake with fruit candies and almond flakes	1.99	11	1	
+285	2010-01-01	305	1	mini marble cake	vanilla amd chocolate mix cake	1.99	11	1	
+286	2010-01-01	306	1	mini plum cake	caramel cake with fruit candies and almond flakes	1.99	11	1	
+287	2010-01-01	307	2	Bread crumbs	Bread crumbs	1.49	12	1	
+288	2010-01-01	308	1	Fruit toast	sweet toast with fruit candies	4.49	12	1	
+289	2010-01-01	308	2	Fruit toast	sweet toast with fruit candies	4.49	12	1	
+290	2010-01-01	309	1	Jeera butter	cumin flavor dry dough	5.99	12	1	
+291	2010-01-01	310	2	Khari box	plain puff pastry	5.99	12	1	
+292	2010-01-01	311	1	Milk Toast	sweet toast 	4.49	12	1	
+293	2010-01-01	311	2	Milk Toast	sweet toast 	4.49	12	1	
+294	2010-01-01	312	1	plain toast	plain toast	4.49	12	1	
+295	2010-01-01	312	2	plain toast	plain toast	4.49	12	1	
+296	2010-01-01	313	1	Aalo Capsicum panini	spicy potato sandwich made in house baked italian bread	6.99	13	1	
+297	2010-01-01	313	2	Aalo Capsicum panini	spicy potato sandwich made in house baked italian bread	6.99	13	1	
+298	2010-01-01	314	1	Chicken Tikka panini	spicy chicken tikka flavor chicken sandwich sandwich made in house baked italian bread	7.49	13	1	
+299	2010-01-01	315	1	Grilled chicken panini	non spicy chicken sandwich made in house baked italian bread	7.49	13	1	
+300	2010-01-01	315	2	Grilled chicken panini	non spicy chicken sandwich made in house baked italian bread	7.49	13	1	
+301	2010-01-01	316	1	Vegetable panini	mixed vegetable sandwich made in house baked italian bread	6.99	13	1	
+302	2010-01-01	317	1	Black forest pastry	chocolate base vanilla cream and crushed cherries	3.99	14	1	
+303	2010-01-01	318	1	Brownie pop	chococolate brownie pop	1.99	14	1	
+304	2010-01-01	318	2	Brownie pop	chococolate brownie pop	1.99	14	1	
+305	2010-01-01	319	1	Chocolate flakes pastry	fresh chocolate cream	3.99	14	1	
+306	2010-01-01	319	2	Chocolate flakes pastry	fresh chocolate cream	3.99	14	1	
+307	2010-01-01	320	1	Chocolate pyramid pastry	fresh chocolate cream and chocolate ganache	4.99	14	1	
+308	2010-01-01	321	1	Chocolate trufle pastry	chocolate ganache	4.29	14	1	
+309	2010-01-01	321	2	Chocolate trufle pastry	chocolate ganache	4.29	14	1	
+310	2010-01-01	322	1	Coffee Crunch pastry	coffee flavor and caramalized cashew	3.99	14	1	
+311	2010-01-01	322	2	Coffee Crunch pastry	coffee flavor and caramalized cashew	3.99	14	1	
+312	2010-01-01	323	1	Coffee pastry	coffee flavor 	3.99	14	1	
+313	2010-01-01	323	2	Coffee pastry	coffee flavor 	3.99	14	1	
+314	2010-01-01	324	2	Cream roll	cream horn with vanilla cream	2.49	14	1	
+315	2010-01-01	325	1	Dulce de leche pastry	caramel flavor	3.99	14	1	
+316	2010-01-01	325	2	Dulce de leche pastry	caramel flavor	3.99	14	1	
+317	2010-01-01	326	2	Eggless blackforest pastry	eggless chocolate base with vanilla cream and cherries	3.79	14	1	
+318	2010-01-01	327	1	Eggless pineapple pastry	eggless vanilla base with crushed pineapple	3.79	14	1	
+319	2010-01-01	328	2	Eggless mixfruit pastry	eggless vanilla base with mixed fruits 	3.79	14	1	
+320	2010-01-01	329	2	Ferrero Rocher chocolate pastry	chocolate base with crushed hazelnut chocolate 	4.99	14	1	
+321	2010-01-01	330	1	Kit kat pastry	chocolate base with chocolate wafer 	4.99	14	1	
+322	2010-01-01	330	2	Kit kat pastry	chocolate base with chocolate wafer 	4.99	14	1	
+323	2010-01-01	331	1	Mango pastry	vanilla base with mango puree	3.99	14	1	
+324	2010-01-01	332	2	Mix fruit pastry	vanilla base with fresh fruits 	3.99	14	1	
+325	2010-01-01	333	1	Mocha pastry	chocolate base with coffee and chocolate flavor	3.99	14	1	
+326	2010-01-01	333	2	Mocha pastry	chocolate base with coffee and chocolate flavor	3.99	14	1	
+327	2010-01-01	334	2	Nougat pastry	vanilla base with caramalized sugar with cashew	3.99	14	1	
+328	2010-01-01	335	1	Pineapple pastry	vanilla base with crushed pineapple	3.99	14	1	
+329	2010-01-01	335	2	Pineapple pastry	vanilla base with crushed pineapple	3.99	14	1	
+330	2010-01-01	336	1	Pistachio pastry	vanilla base with pistachio essence and pistachio nuts	3.99	14	1	
+331	2010-01-01	336	2	Pistachio pastry	vanilla base with pistachio essence and pistachio nuts	3.99	14	1	
+332	2010-01-01	337	1	Rasamalai pastry	vanilla base with pieces of rasamalai 	4.99	14	1	
+333	2010-01-01	337	2	Rasamalai pastry	vanilla base with pieces of rasamalai 	4.99	14	1	
+334	2010-01-01	338	2	Strawberry pastry	vanilla base with fresh strawberries	3.99	14	1	
+335	2010-01-01	339	1	Specialty pastry	ocassional flavor	3.99	14	1	
+336	2010-01-01	340	2	Tres Leche pastry cup	three different kind of milk and vanilla base	4.49	14	1	
+337	2010-01-01	341	1	White chocolate raspberry pastry	vanilla base with chocolate cream and raspberry flavor	4.99	14	1	
+338	2010-01-01	341	2	White chocolate raspberry pastry	vanilla base with chocolate cream and raspberry flavor	4.99	14	1	
+339	2010-01-01	342	1	Chicken Tikka pizza	spicy chicken tikka flovor pizza	3.49	15	1	
+340	2010-01-01	342	2	Chicken Tikka pizza	spicy chicken tikka flovor pizza	3.49	15	1	
+341	2010-01-01	343	1	Chicken tikka Plait	spicy chicken tikka flovor large pizza	5.99	15	1	
+342	2010-01-01	344	1	Roasted chicken pizza	non spicy chicken pizza	3.49	15	1	
+343	2010-01-01	344	2	Roasted chicken pizza	non spicy chicken pizza	3.49	15	1	
+344	2010-01-01	345	2	Vegetable pizza	mix vegetable pizza	3.49	15	1	
+345	2010-01-01	346	1	Aalo capsicum puff	Spicy potato filling puff pastry	3.49	16	1	
+346	2010-01-01	347	2	Chicken keema puff	grounded chicken filling puff pastry	3.59	16	1	
+347	2010-01-01	348	2	Chili chicken puff	spicy chunk chicken filling puff pastry	3.49	16	1	
+348	2010-01-01	349	1	Chicken tikka puff	spicy chicken tikka flavor filling puff pastry	3.49	16	1	
+349	2010-01-01	350	2	Chili paneer puff	spicy chunk indian cottage cheese filling puff pastry	3.69	16	1	
+350	2010-01-01	351	1	Egg puff	spicy boiled egg filling puff pastry	3.49	16	1	
+351	2010-01-01	351	2	Egg puff	spicy boiled egg filling puff pastry	3.49	16	1	
+352	2010-01-01	352	2	Goat keema puff	spicy grounded goat filling puff pastry	4.29	16	1	
+353	2010-01-01	353	1	Masala aalo puff	spicy potato filling puff pastry	3.49	16	1	
+354	2010-01-01	353	2	Masala aalo puff	spicy potato filling puff pastry	3.49	16	1	
+355	2010-01-01	354	1	Masala egg puff	Extra spicy boiled egg filling puff pastry	3.49	16	1	
+356	2010-01-01	355	2	Paneer masala puff	shredded indian cottage cheese filling puff pastry	3.69	16	1	
+357	2010-01-01	356	1	Schewan Chicken puff	schewan chicken flavor filling puff pastry	3.49	16	1	
+358	2010-01-01	357	1	Spicy BBQ Chicken puff	spicy bbq chicken flavor filling puff pastry	3.49	16	1	
+359	2010-01-01	357	2	Spicy BBQ Chicken puff	spicy bbq chicken flavor filling puff pastry	3.49	16	1	
+360	2010-01-01	358	1	Vegetable puff	mixed vegetable filling puff pastry	3.49	16	1	
+361	2010-01-01	359	1	White chicken puff	non spicy chicken flavor filling puff pastry	3.49	16	1	
+362	2010-01-01	359	2	White chicken puff	non spicy chicken flavor filling puff pastry	3.49	16	1	
+363	2010-01-01	360	2	Aalo Masala wrap	grilled spicy potato wrapped in house baked tortilla	6.99	17	1	
+364	2010-01-01	361	2	Chana Masala wrap	spicy chickpeas wrapped in house baked tortilla	6.99	17	1	
+365	2010-01-01	362	2	Chicken tikka wrap	spicy grounded chicken wrapped in house baked tortilla	7.49	17	1	
+366	2010-01-01	363	1	Chili chicken wrap	spicy gravy chunk chicken wrapped in house baked tortilla 	7.49	17	1	
+367	2010-01-01	364	1	Chili paneer wrap	spicy indian cottage cheese wrapped in house baked tortilla	7.99	17	1	
+368	2010-01-01	365	2	Grilled chicken wrap	non spicy chicken wrapped in house baked tortilla	7.49	17	1	
+369	2010-01-01	366	2	Paneer Tikka wrap	Indian cottage cheese wrapped in house baked tortilla	7.49	17	1	
+370	2010-01-01	367	1	Vegetable wrap	Mixed vegatable wrapped in house baked tortilla	6.99	17	1	
+371	2010-01-01	368	1	Butter chicken sub	butter chicken sub sandwich	4.99	18	1	
+372	2010-01-01	369	1	Chicken Tikka sub	chicken tikka flavor sub sandwich	4.99	18	1	
+373	2010-01-01	369	2	Chicken Tikka sub	chicken tikka flavor sub sandwich	4.99	18	1	
+374	2010-01-01	370	1	Chicken quiche	house special chicken flavor quiche	3.49	19	1	
+375	2010-01-01	370	2	Chicken quiche	house special chicken flavor quiche	3.49	19	1	
+376	2010-01-01	371	1	Chicken tikka quiche	chicken tikka flavor quiche	3.49	19	1	
+377	2010-01-01	372	2	Chili chicken pie	spicy chicken pie	3.49	19	1	
+378	2010-01-01	373	2	Masala aalo pie	spicy potato pie	3.49	19	1	
+379	2010-01-01	374	1	Roasted chicken pie	non spicy chicken pie	3.49	19	1	
+380	2010-01-01	375	2	Siracha Chicken pie	sriracha spicy chicken pie	3.49	19	1	

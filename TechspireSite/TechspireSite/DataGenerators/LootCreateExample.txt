@@ -1,0 +1,28 @@
+{
+  "LootSettings": [
+    {
+      "pulls": 10,
+      "options": [
+        {
+          "Weight": "5",
+          "Items": [
+            {h
+              "type": "/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponRifle.PrimalItem_WeaponRifle"
+              ,"maxQ": "5"
+              ,"minQ": "5"
+            }
+          ]
+        },
+        {
+          "Weight": "1",
+          "Items": [
+            {
+              "type": "/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Element.PrimalItemResource_Element",
+              "Qty": 50
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

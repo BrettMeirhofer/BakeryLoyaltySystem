@@ -1,0 +1,26 @@
+{% extends 'admin/base_site.html' %}
+{% load i18n %}
+{% load static %}
+{% block nav-sidebar %}{% endblock %}
+{% block breadcrumbs %}{% endblock %}
+{% block extrahead %}{{ block.super }}
+
+<style>
+    input[type=button]{
+        padding: 20px 30px;
+        font-size: 1.2em;
+
+
+    }
+
+    #content{
+
+        text-align:center
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<a href="/admin/Bakery/customer/add/"><input type="button" name="Customer" value="Download Backup"></a>
+<a href="/admin/Bakery/customer/add/"><input type="button" name="Customer" value="Upload Backup"></a>
+{% endblock %}

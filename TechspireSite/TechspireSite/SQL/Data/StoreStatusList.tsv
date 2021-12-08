@@ -1,0 +1,6 @@
+1	Active	Store is Open for Business	1
+2	Inactive	Store is Out of Business	0
+3	Inactive-Construction	Store is Under Construction	0
+4	Inactive-Repairs	Store is Undergoing Repairs	0
+5	Inactive-Holiday	Store is Closed Due to a National Holiday	0
+6	Inactive-Weather	Store is Closed Due to Extreme Weather Conditions	0

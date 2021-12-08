@@ -1,0 +1,32 @@
+{% extends 'admin/reports/base_report.html' %}
+{% block content %}
+
+    {% for report in reports %}
+    <h2>{{report.name}}</h2>
+    <table style="page-break-after: always;">
+    <thead>
+        <tr>
+            {% for column in report.titles %}
+            <th>
+                {{column}}
+            </th>
+            {% endfor %}
+        </tr>
+    </thead>
+
+        {% if report.data %}
+        {% for row in report.data %}
+        <tr>
+            {% for column in row %}
+            <td class="{{column.1}}">
+                {{column.0}}
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+        {% endif %}
+    </table>
+    {% endfor %}
+
+{% endblock %}
+

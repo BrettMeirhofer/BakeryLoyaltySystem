@@ -1,0 +1,15 @@
+{% extends "admin/hide_inline.html" %}
+{% load i18n %}
+{% block content %}
+<style>
+    .field-product_price div label{
+        width:150px;
+    }
+
+    #id_product_price{
+        text-align:right;
+        width: 8em;
+    }
+</style>
+{{ block.super }}
+{% endblock %}

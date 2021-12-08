@@ -1,0 +1,35 @@
+        h2{
+            text-align: center
+        }
+
+        h3{
+            text-align: left
+        }
+
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          margin:auto;
+        }
+
+        td {
+          border: 1px solid #dddddd;
+          padding: 8px;
+          text-align: left;
+        }
+
+        th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+
+        tr:nth-child(even) {
+          background-color: #dddddd;
+
+        }
+
+        .right {
+            text-align: right;
+        }
+
