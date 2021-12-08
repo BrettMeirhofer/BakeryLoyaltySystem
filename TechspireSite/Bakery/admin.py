@@ -56,7 +56,6 @@ class MenuAdmin(TwentyPageAdmin):
     list_display = ["product", "store"]
 
 
-
 @admin.register(models.Reward)
 class RewardAdmin(TwentyPageAdmin):
     model = models.Reward
@@ -74,34 +73,6 @@ class RewardAdmin(TwentyPageAdmin):
             '//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js',
             'Bakery/js/UpdateDiscountPrice.js',
         )
-
-
-@admin.register(models.Employee)
-class EmployeeAdmin(ReverseTwentyAdmin):
-    fields = (("first_name", "last_name"), "email_address", "phone_number", ("birthdate", "end_date"), ("employee_status", "employee_type"), "comments")
-    inline_type = "tabular"
-    inline_reverse = ["location", ]
-    search_fields = ["email_address", "phone_number"]
-    widgets = {
-        'phone_number': forms.PhoneForm
-    }
-    list_filter = ["employee_status"]
-    list_display = ["first_name", "last_name", "email_address", "display_phone", "employee_status"]
-    inlines = [forms.EmployeeCategoryForm, forms.EmployeeJobForm, forms.EmployeeSocialForm]
-
-    change_form_template = 'admin/location_form.html'
-
-    class Media:
-        js = (
-            '//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js',
-            '//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js',
-            'Bakery/js/Location.js',
-            'Bakery/js/FormatPhone.js',
-        )
-
-    @admin.display(description='Phone Number', ordering="phone_number")
-    def display_phone(self, obj):
-        return format_phone(str(obj.phone_number))
 
 
 @admin.register(models.Customer)
@@ -261,22 +232,14 @@ class StateAdmin(TwentyPageAdmin):
     search_fields = ["state_name"]
 
 
-@admin.register(models.Tier)
-class TierAdmin(TwentyPageAdmin):
-    list_display = ["tier_name", "min_points"]
-
-
 # Register all the models for bakery that don't have a custom admin model
 def register_models():
     basic_admin_models = [models.ProductType, models.ProductStatus, models.CustomerStatus,
-                          models.EmployeeStatus, models.RewardStatus, models.StoreStatus,
-                          models.EmployeeLabel, models.EmployeeType,
-                          models.Job, models.BanType, models.PointReason, models.SocialMediaType, models.PaymentType,
-                          models.CustomerLabel]
+                          models.RewardStatus, models.StoreStatus, models.BanType,
+                          models.PointReason, models.PaymentType]
     for target_model in basic_admin_models:
         admin.site.register(target_model, TwentyPageAdmin)
 
 
 register_models()
-#admin.site.unregister(User)
-#admin.site.unregister(Group)
+
