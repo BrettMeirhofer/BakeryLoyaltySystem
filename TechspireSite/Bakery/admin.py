@@ -1,13 +1,8 @@
 from django.contrib import admin
-from django.contrib.auth.models import User, Group
 from .reverse_inline import ReverseModelAdmin
 from django.db.models import CharField
 from . import forms
 from . import models
-from django.db import connection, ProgrammingError, DataError
-import os
-from . import widgets
-import logging
 
 
 def format_phone(target_string):
@@ -59,8 +54,8 @@ class MenuAdmin(TwentyPageAdmin):
 @admin.register(models.Reward)
 class RewardAdmin(TwentyPageAdmin):
     model = models.Reward
-    list_display = ["reward_name", "point_cost", "display_discount", "reward_status", "date_added", "tier"]
-    list_filter = ["reward_status", "tier"]
+    list_display = ["reward_name", "point_cost", "display_discount", "reward_status", "date_added"]
+    list_filter = ["reward_status"]
     change_form_template = 'admin/reward_form.html'
 
     @admin.display(description='Discount', ordering="discount_amount")
@@ -76,26 +71,20 @@ class RewardAdmin(TwentyPageAdmin):
 
 
 @admin.register(models.Customer)
-class CustomerAdmin(ReverseTwentyAdmin):
+class CustomerAdmin(TwentyPageAdmin):
     fields = (
         ('first_name', 'last_name'), "email_address", "birthdate", "phone_number",
-        ("customer_status", "create_employee"), ("points_earned", "points_spent", "point_total", "tier"), "comments"
+        "customer_status", ("points_earned", "points_spent", "point_total"), "comments"
     )
 
     widgets = {
         'phone_number': forms.PhoneForm
     }
-    list_filter = ["customer_status", "tier"]
+    list_filter = ["customer_status"]
     search_fields = ["email_address", "phone_number"]
-    list_display = ["first_name", "last_name", "email_address", "display_phone", "customer_status", "tier",
+    list_display = ["first_name", "last_name", "email_address", "display_phone", "customer_status",
                     "points_earned"]
-    inlines = [forms.CustomerCategoryForm, forms.CustomerSocialForm]
-    inline_type = "tabular"
-    inline_reverse = ["location", ]
-    raw_id_fields = ("create_employee",)
-    readonly_fields = ["points_earned", "points_spent", "point_total", "tier"]
-
-    change_form_template = 'admin/location_form.html'
+    readonly_fields = ["points_earned", "points_spent", "point_total"]
 
     class Media:
         js = (
@@ -112,10 +101,10 @@ class CustomerAdmin(ReverseTwentyAdmin):
 
 @admin.register(models.Order)
 class OrderAdmin(TwentyPageAdmin):
-    fields = (("customer", "payment_type"), ("store", "employee"),
+    fields = ("customer", "store",
               "points_produced", "points_consumed", "points_total",
               "original_total", "discount_amount", "eligible_for_points", "final_total")
-    list_display = ["customer", "store", "employee", "order_date", "display_original_total", "payment_type"]
+    list_display = ["customer", "store", "order_date", "display_original_total"]
     readonly_fields = ["original_total", "discount_amount", "eligible_for_points",
                        "points_consumed", "points_produced", "points_total", "final_total"]
     inlines = [forms.OrderLineInline, forms.RewardLineForm]
@@ -136,7 +125,7 @@ class OrderAdmin(TwentyPageAdmin):
 
     def get_readonly_fields(self, request, obj=None):
         if obj:  # editing an existing object
-            return ["order_date", "customer", "store", "payment_type", "employee"] + self.readonly_fields
+            return ["order_date", "customer", "store", "payment_type"] + self.readonly_fields
         return self.readonly_fields
 
     def get_inlines(self, request, obj):
@@ -150,9 +139,9 @@ class OrderAdmin(TwentyPageAdmin):
         return True
 
     def save_model(self, request, obj, form, change):
-        points_added = models.PointLog(employee=obj.employee, customer=obj.customer,
+        points_added = models.PointLog(customer=obj.customer,
                                        reason_id=4, order=obj, points_amount=obj.points_produced)
-        points_removed = models.PointLog(employee=obj.employee, customer=obj.customer,
+        points_removed = models.PointLog(customer=obj.customer,
                                          reason_id=5, order=obj, points_amount=-obj.points_consumed)
         obj.save()
         points_added.save()
@@ -187,12 +176,8 @@ class StoreRewardAdmin(TwentyPageAdmin):
 
 
 @admin.register(models.Store)
-class StoreAdmin(ReverseTwentyAdmin):
-    inline_type = "tabular"
-    inline_reverse = ["location", ]
-    inlines = [forms.StoreSocialForm]
-    list_display = ["store_name", "display_phone", "email_address", "website_address", "store_status"]
-    change_form_template = 'admin/location_form.html'
+class StoreAdmin(TwentyPageAdmin):
+    list_display = ["store_name", "store_status"]
 
     class Media:
         js = (
@@ -202,41 +187,19 @@ class StoreAdmin(ReverseTwentyAdmin):
             'Bakery/js/FormatPhone.js',
         )
 
-    def get_form(self, request, obj=None, **kwargs):
-        form = super(StoreAdmin, self).get_form(request, obj, **kwargs)
-        form.base_fields['website_address'].widget.attrs['style'] = 'width: 40em;'
-        form.base_fields['email_address'].widget.attrs['style'] = 'width: 40em;'
-        return form
-
-    @admin.display(description='Phone Number', ordering="phone_number")
-    def display_phone(self, obj):
-        return format_phone(str(obj.phone_number))
-
 
 @admin.register(models.PointLog)
 class PointLogAdmin(TwentyPageAdmin):
     list_display = ["customer", "reason", "points_amount", "created_date"]
     list_filter = ["reason"]
-    raw_id_fields = ["order", "employee", "customer"]
-
-
-@admin.register(models.Country)
-class CountryAdmin(TwentyPageAdmin):
-    list_display = ["country_name"]
-    search_fields = ["country_name"]
-
-
-@admin.register(models.StateProvince)
-class StateAdmin(TwentyPageAdmin):
-    list_display = ["state_name", "country"]
-    search_fields = ["state_name"]
+    raw_id_fields = ["order", "customer"]
 
 
 # Register all the models for bakery that don't have a custom admin model
 def register_models():
     basic_admin_models = [models.ProductType, models.ProductStatus, models.CustomerStatus,
                           models.RewardStatus, models.StoreStatus, models.BanType,
-                          models.PointReason, models.PaymentType]
+                          models.PointReason]
     for target_model in basic_admin_models:
         admin.site.register(target_model, TwentyPageAdmin)
 

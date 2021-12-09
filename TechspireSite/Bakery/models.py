@@ -3,7 +3,7 @@ from django import forms
 from phonenumber_field.modelfields import PhoneNumberField
 from django.utils import timezone
 import os
-from django.db import connection, ProgrammingError, DataError
+from django.db import connection
 
 
 def past_validator(value):
@@ -79,7 +79,7 @@ class ProductStatus(StatusCode):
     class Meta:
         db_table = "ProductStatus"
         verbose_name_plural = "Product Status"
-        
+
 
 class StoreStatus(StatusCode):
     description = 'Soft delete of store.'
@@ -127,53 +127,6 @@ class PointReason(DescriptiveModel):
         return self.reason_name
 
 
-class Country(DescriptiveModel):
-    description = 'The nation that a particular entity (a store, a customer) is located in.'
-    country_name = models.CharField(max_length=60)
-    load_order = 1
-    category = "Other"
-
-    def __str__(self):
-        return self.country_name
-
-    class Meta:
-        db_table = "Country"
-        verbose_name_plural = "Country"
-        
-
-class StateProvince(DescriptiveModel):
-    description = 'The state/province that a particular entity (a store, a customer) is located in.'
-    state_name = models.CharField(max_length=60)
-    country = models.ForeignKey(Country, on_delete=models.RESTRICT, default=233)
-    load_order = 2
-    category = "Other"
-
-    def __str__(self):
-        return self.state_name
-
-    class Meta:
-        db_table = "StateProvince"
-        verbose_name_plural = "State/Province"
-        
-
-class Location(DescriptiveModel):
-    description = "Represents a complete address for a location"
-    zip_code = models.CharField(max_length=10)
-    city = models.CharField(max_length=35, default="Houston")
-    address = models.CharField(max_length=100, default="3242 StreetName")
-    state = models.ForeignKey(StateProvince, on_delete=models.RESTRICT, default=1407)
-    country = models.ForeignKey(Country, on_delete=models.RESTRICT, default=233)
-    load_order = 3
-
-    class Meta:
-        db_table = "Location"
-        verbose_name_plural = "Address"
-        verbose_name = "Address"
-
-    def __str__(self):
-        return "{} {} {} {}".format(self.address, self.zip_code, self.state, self.country)
-
-
 # Used as an abstract parent for people
 class Person(DescriptiveModel):
     first_name = models.CharField(max_length=40)
@@ -182,7 +135,6 @@ class Person(DescriptiveModel):
     phone_number = PhoneNumberField(max_length=15, help_text="xxx-xxx-xxxx", default="+19043335252")
     birthdate = models.DateField(validators=[past_validator])
     begin_date = models.DateField(auto_now_add=True, help_text="YYYY-MM-DD")
-    location = models.ForeignKey(Location, on_delete=models.RESTRICT, verbose_name="Address")
     comments = models.TextField(blank=True, null=True)
 
     class Meta:
@@ -199,31 +151,17 @@ class Customer(Person):
     points_earned = models.IntegerField(default=0)
     points_spent = models.IntegerField(default=0)
     point_total = models.IntegerField(default=0)
-
-    location = models.ForeignKey(Location, on_delete=models.SET_NULL, blank=True, null=True)
     load_order = 5
     category = "Cashier"
 
     class Meta:
         db_table = "Customer"
         verbose_name_plural = "Loyalty Customer"
-
-
-class PaymentType(LabelCode):
-    description = 'The way a customer pays for a service or product such as cash, credit, Google Pay, etc.'
-
-    class Meta:
-        db_table = "PaymentType"
-        verbose_name_plural = "Payment Type"
         
 
 class Store(DescriptiveModel):
     description = 'A physical location where customers go to complete transactions.'
     store_name = models.CharField(max_length=40)
-    phone_number = PhoneNumberField(max_length=15, blank=True, null=True, help_text="xxx-xxx-xxxx", default="+19043335252")
-    email_address = models.EmailField(max_length=254, blank=True, null=True)
-    website_address = models.CharField(max_length=300, blank=True, null=True)
-    location = models.ForeignKey(Location, on_delete=models.RESTRICT)
     store_status = models.ForeignKey(StoreStatus, on_delete=models.RESTRICT)
     start_date = models.DateField()
     end_date = models.DateField(blank=True, null=True)
@@ -242,7 +180,7 @@ class Order(DescriptiveModel):
     description = 'The customer’s finalized transaction of products purchased. ' \
                   'This order generates customer loyalty points based on the monetary total of the transaction.'
     order_date = models.DateField(auto_now_add=True)
-    original_total = MoneyField()
+    original_total = models.DecimalField(max_digits=19, decimal_places=4, default=0)
     final_total = models.DecimalField(max_digits=19, decimal_places=4, default=0)
     discount_amount = models.DecimalField(max_digits=19, decimal_places=4, default=0)
     eligible_for_points = models.DecimalField(max_digits=19, decimal_places=4, default=0)
@@ -250,7 +188,6 @@ class Order(DescriptiveModel):
     points_produced = models.IntegerField(default=0)
     points_total = models.IntegerField(default=0)
     customer = models.ForeignKey(Customer, on_delete=models.RESTRICT)
-    payment_type = models.ForeignKey(PaymentType, on_delete=models.RESTRICT)
     store = models.ForeignKey(Store, on_delete=models.RESTRICT)
     load_order = 6
     category = "Cashier"

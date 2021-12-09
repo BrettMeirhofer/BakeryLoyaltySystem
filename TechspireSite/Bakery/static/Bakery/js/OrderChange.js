@@ -180,27 +180,6 @@ function update_rewards() {
 
 }
 
-//Updates the employee dropdown
-function update_emps() {
-    var url = $("#Emp_URL").attr("data-url");
-    var storeID = $("#id_store").val();
-    var target_element = $("#id_employee")
-    var empID = target_element.val();
-    $.ajax({
-        url: url,
-        data: {
-            'store': storeID
-        },
-        success: function (data) {
-            target_element.html(data);
-            target_element.val(empID)
-            //If selected option doesn't exsist reset it to blank
-            if (target_element.val() == null) {
-                target_element.val("")
-            }
-        }
-    })
-}
 
 //Updates the total for a orderline row
 function update_line_total(line_num) {
@@ -241,7 +220,6 @@ function convert_money(element) {
 function update_on_store() {
     update_products()
     update_rewards()
-    update_emps()
 }
 
 //Adds a dollar sign and sets decimals to 2

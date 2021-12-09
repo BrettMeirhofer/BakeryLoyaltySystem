@@ -6,8 +6,7 @@ from django.forms.models import BaseInlineFormSet
 from django.contrib import admin
 from django.core import validators
 from phonenumber_field.formfields import PhoneNumberField
-from .models import OrderLine, CustomerSocialMedia, EmployeeSocialMedia, StoreSocialMedia, AssocCustomerLabel, \
-    AssocEmployeeLabel, EmployeeJob, Product, Reward, OrderReward, Customer, Order
+from .models import OrderLine, Product, Reward, OrderReward, Customer
 
 
 class LocationForm(forms.ModelForm):
@@ -21,48 +20,6 @@ class GenericForm(forms.ModelForm):
 class ProductForm(forms.ModelForm):
     model = Product
     pass
-
-
-class CustomerCategoryForm(admin.TabularInline):
-    model = AssocCustomerLabel
-    extra = 1
-    min_num = 0
-    verbose_name = "Category"
-
-
-class CustomerSocialForm(admin.TabularInline):
-    model = CustomerSocialMedia
-    extra = 1
-    min_num = 0
-    fields = ["social_media_code", "social_media_type", "customer"]
-
-
-class EmployeeSocialForm(admin.TabularInline):
-    model = EmployeeSocialMedia
-    extra = 1
-    min_num = 0
-    fields = ["social_media_code", "social_media_type", "employee"]
-
-
-class StoreSocialForm(admin.TabularInline):
-    model = StoreSocialMedia
-    extra = 1
-    min_num = 0
-    fields = ["social_media_code", "social_media_type", "store"]
-
-
-class EmployeeJobForm(admin.TabularInline):
-    model = EmployeeJob
-    extra = 1
-    min_num = 0
-    fields = ["store", "job"]
-
-
-class EmployeeCategoryForm(admin.TabularInline):
-    model = AssocEmployeeLabel
-    extra = 1
-    min_num = 0
-    verbose_name = "Category"
 
 
 class OrderFormSet(BaseInlineFormSet):
