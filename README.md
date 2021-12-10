@@ -5,6 +5,7 @@
 
 # Commands
 Run Data Generators Tests: python -m unittest discover DataGenerator/tests
+Run Bakery Site Tests: python TechspireSite/manage.py test Bakery/
 
 # To Do
 - Add Backup/Restore system
