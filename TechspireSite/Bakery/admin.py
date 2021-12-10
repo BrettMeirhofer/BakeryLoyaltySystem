@@ -1,5 +1,4 @@
 from django.contrib import admin
-from .reverse_inline import ReverseModelAdmin
 from django.db.models import CharField
 from . import forms
 from . import models
@@ -31,17 +30,6 @@ class TwentyPageAdmin(admin.ModelAdmin):
 
     def formfield_for_dbfield(self, db_field, **kwargs):
         field = super(TwentyPageAdmin, self).formfield_for_dbfield(db_field, **kwargs)
-        update_char_field_len(db_field, field)
-        return field
-
-
-class ReverseTwentyAdmin(ReverseModelAdmin):
-    list_per_page = 20
-    save_on_top = True
-    change_form_template = "admin/hide_inline.html"
-
-    def formfield_for_dbfield(self, db_field, **kwargs):
-        field = super(ReverseTwentyAdmin, self).formfield_for_dbfield(db_field, **kwargs)
         update_char_field_len(db_field, field)
         return field
 
@@ -192,7 +180,7 @@ class StoreAdmin(TwentyPageAdmin):
 class PointLogAdmin(TwentyPageAdmin):
     list_display = ["customer", "reason", "points_amount", "created_date"]
     list_filter = ["reason"]
-    raw_id_fields = ["order", "customer"]
+    raw_id_fields = ["customer"]
 
 
 # Register all the models for bakery that don't have a custom admin model

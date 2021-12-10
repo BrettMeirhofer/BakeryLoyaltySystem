@@ -120,7 +120,7 @@ class PointReason(DescriptiveModel):
     category = "Other"
 
     class Meta:
-        db_table = "PointReasonType"
+        db_table = "PointReason"
         verbose_name_plural = "Point Log Type"
 
     def __str__(self):
@@ -335,7 +335,7 @@ class StoreReward(DescriptiveModel):
 
 class OrderReward(DescriptiveModel):
     description = "Effectively the reward equivalent to OrderLine for transactions."
-    order = models.ForeignKey(Order, on_delete=models.RESTRICT, unique=True)
+    order = models.ForeignKey(Order, on_delete=models.RESTRICT)
     reward = models.ForeignKey(Reward, on_delete=models.RESTRICT)
     point_cost = models.IntegerField(default=0)
     discount_amount = models.DecimalField(max_digits=19, decimal_places=4, default=0)
@@ -364,7 +364,6 @@ class PointLog(DescriptiveModel):
     created_date = models.DateField(auto_now_add=True)
     customer = models.ForeignKey(Customer, on_delete=models.RESTRICT)
     reason = models.ForeignKey(PointReason, on_delete=models.RESTRICT)
-    order = models.ForeignKey(Order, on_delete=models.SET_NULL, blank=True, null=True)
     load_order = 7
     category = "Core"
 

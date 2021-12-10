@@ -4,15 +4,8 @@ import csv
 from os import path
 from django.db import models
 
+
 class BulkCreateManager(object):
-    """
-    This helper class keeps track of ORM objects to be created for multiple
-    model classes, and automatically creates those objects with `bulk_create`
-    when the number of objects accumulated for a given model class exceeds
-    `chunk_size`.
-    Upon completion of the loop that's `add()`ing objects, the developer must
-    call `done()` to ensure the final set of objects is created for all models.
-    """
 
     def __init__(self, chunk_size=100):
         self._create_queues = defaultdict(list)
@@ -24,10 +17,6 @@ class BulkCreateManager(object):
         self._create_queues[model_key] = []
 
     def add(self, obj):
-        """
-        Add an object to the queue to be created, and call bulk_create if we
-        have enough objs.
-        """
         model_class = type(obj)
         model_key = model_class._meta.label
         self._create_queues[model_key].append(obj)

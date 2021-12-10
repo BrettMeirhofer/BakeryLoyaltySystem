@@ -1,0 +1,4 @@
+id	status_name	status_desc	is_active
+1	Active	Standard Active	1
+2	Inactive	Standard Inactive	0
+3	Inactive-Cancel 	Cancelled Membership	0
