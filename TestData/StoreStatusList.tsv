@@ -1,0 +1,3 @@
+id	status_name	status_desc	is_active
+1	Active	Store is Open for Business	1
+2	Inactive	Store is Out of Business	0
