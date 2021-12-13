@@ -37,6 +37,7 @@ class TwentyPageAdmin(admin.ModelAdmin):
 @admin.register(models.StoreProduct)
 class MenuAdmin(TwentyPageAdmin):
     list_display = ["product", "store"]
+    list_filter = ["store"]
 
 
 @admin.register(models.Reward)

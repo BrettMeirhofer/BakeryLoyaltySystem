@@ -1,0 +1,85 @@
+id	reward_name	reward_desc	point_cost	reset_period	discount_amount	date_added	date_disabled	reward_status_id	free_product_id
+1	Specialty Pastry	Ocassional flavor	3		0	2015-1-1		1	339
+2	Keema Bun	Spicy grounded goat filled bun	4		0	2021-1-1		1	117
+3	Milk Toast	Sweet toast 	4		0	2021-1-1		1	311
+4	Large Round Plum Cake	Caramel cake with fruit candies and almond flakes	8		0	2015-1-1		1	301
+5	Bread Crumbs	Bread crumbs	1		0	2021-1-1		1	307
+6	Snapple	Non alcholic beverages	2		0	2021-1-1		1	293
+7	Water	Non alcholic beverages	1		0	2015-1-1		1	297
+8	Chicken Salad Sandwich	Non spicy chicken chicken sandwiches	4		0	2002-1-1		1	248
+9	Thumps Up	Non alcholic beverages	2		0	2021-1-1		1	296
+10	Masala Aalo Pie	Spicy potato pie	3		0	2021-1-1		1	373
+11	4 Pack Mawa Cupcake	4 pieces of cupcake made from condensed milk	6		0	2021-1-1		1	298
+12	Bomaby Nan Bread (Small-2Pcs)	Indian small round eggless bread	2		0	2002-1-1		1	101
+13	Goat Keema Puff	Spicy grounded goat filling puff pastry	4		0	2015-1-1		1	352
+14	Grilled Cheese Sandwich	Mozarella cheese sandwich made with house baked  sandwich bread	4		0	2002-1-1		1	109
+15	Bombay Nan Bread	Indian large round eggless bread	2		0	2021-1-1		1	100
+16	Ferrero Rocher Chocolate Pastry	Chocolate base with crushed hazelnut chocolate 	4		0	2015-1-1		1	329
+17	Aaloo Masala Croissants	Spicy potato filling croissants	3		0	2015-1-1		1	280
+18	Large Eggless Almond Nankatai Cookie Box	Almond with cardamom flavor cookies	10		0	2002-1-1		1	258
+19	Soda	Non alcholic beverages	1		0	2002-1-1		1	294
+20	Rasamalai Pastry	Vanilla base with pieces of rasamalai 	4		0	2021-1-1		1	337
+21	Orange Juice	Non alcholic beverages	1		0	2021-1-1		1	291
+22	Large Whole Almond Cookie Box	Butter cookies with whole almond 	10		0	2015-1-1		1	262
+23	Vada Pav	Spicy potato patties with house baked pav bread	5		0	2015-1-1		1	111
+24	Coffee Crunch Pastry	Coffee flavor and caramalized cashew	3		0	2002-1-1		1	322
+25	Aalo Masala Wrap	Grilled spicy potato wrapped in house baked tortilla	6		0	2002-1-1		1	360
+26	Coffee Pastry	Coffee flavor 	3		0	2002-1-1		1	323
+27	Small Eggless Crushed Almond Cookie Box	Eggless crushed almond butter cookies	5		0	2015-1-1		1	266
+28	Pakola	Non alcholic beverages	1		0	2015-1-1		1	292
+29	Jeera Butter	Cumin flavor dry dough	5		0	2015-1-1		1	309
+30	Small Mixed Cookie Box	Mixture of all cookies 	5		0	2015-1-1		1	275
+31	Vegetable Wrap	Mixed vegatable wrapped in house baked tortilla	6		0	2002-1-1		1	367
+32	Fruit Bread	Sweet eggless bread with fruit candies	3		0	2002-1-1		1	102
+33	Chocolate Milk	Non alcholic beverages	1		0	2021-1-1		1	285
+34	Small Eggless Pistachio Cookie Box	Eggless pistachio butter cookies	5		0	2015-1-1		1	265
+35	Brownie Pop	Chococolate brownie pop	1		0	2015-1-1		1	318
+36	Plain Toast	Plain toast	4		0	2021-1-1		1	312
+37	Chicken Tikka Pizza	Spicy chicken tikka flovor pizza	3		0	2002-1-1		1	342
+38	Large Chocolate Cookie Box	Chocolate butter cookies	10		0	2021-1-1		1	260
+39	Large Eggless Crushed Almond Cookie Box	Eggless crushed almond butter cookies	10		0	2015-1-1		1	255
+40	Strawberry Pastry	Vanilla base with fresh strawberries	3		0	2015-1-1		1	338
+41	Chicken Tikka Puff	Spicy chicken tikka flavor filling puff pastry	3		0	2002-1-1		1	349
+42	Limca	Non alcholic beverages	2		0	2015-1-1		1	288
+43	Large Egglesss Salt Cookie Box	Eggless plaint sweet and salt flavor cookies	10		0	2015-1-1		1	253
+44	Small Coconut Cookie Box	Coconut flavor cookies	5		0	2021-1-1		1	268
+45	Panner Masala Croissants	Spicy indian cottage cheese filling croissants	3		0	2021-1-1		1	279
+46	Large Round Tea Cake	Plain vanilla cake	7		0	2021-1-1		1	302
+47	Aalo Capsicum Puff	Spicy potato filling puff pastry	3		0	2015-1-1		1	346
+48	Masala Egg Puff	Extra spicy boiled egg filling puff pastry	3		0	2015-1-1		1	354
+49	Pistachio Pastry	Vanilla base with pistachio essence and pistachio nuts	3		0	2015-1-1		1	336
+50	Roasted Chicken Pizza	Non spicy chicken pizza	3		0	2021-1-1		1	344
+51	Chili Paneer Wrap	Spicy indian cottage cheese wrapped in house baked tortilla	7		0	2002-1-1		1	364
+52	Chicken Quiche	House special chicken flavor quiche	3		0	2002-1-1		1	370
+53	Chili Chicken Wrap	Spicy gravy chunk chicken wrapped in house baked tortilla 	7		0	2021-1-1		1	363
+54	Small Chocolate Cookie Box	Chocolate butter cookies	5		0	2002-1-1		1	271
+55	Egg Puff	Spicy boiled egg filling puff pastry	3		0	2015-1-1		1	351
+56	Nougat Pastry	Vanilla base with caramalized sugar with cashew	3		0	2015-1-1		1	334
+57	Mix Fruit Pastry	Vanilla base with fresh fruits 	3		0	2021-1-1		1	332
+58	Butter Chicken Sub	Butter chicken sub sandwich	4		0	2015-1-1		1	368
+59	Chocolate Flakes Pastry	Fresh chocolate cream	3		0	2021-1-1		1	319
+60	Small Egglesss Jeera Cookie Box	Eggless cumin flavor cookies	5		0	2021-1-1		1	263
+61	Pav Bread	Plain small 6pcs eggless bun	3		0	2021-1-1		1	105
+62	Chicken Tikka Panini	Spicy chicken tikka flavor chicken sandwich sandwich made in house baked italian bread	7		0	2002-1-1		1	314
+63	Aalu Capsicum Bun	Spicy potato filled bun	3		0	2021-1-1		1	114
+64	Plain Bread	Plain eggless bread	2		0	2021-1-1		1	106
+65	Fruit Bun	Sweet eggless bun with fruit candies	3		0	2002-1-1		1	103
+66	Chicken Tikka Sub	Chicken tikka flavor sub sandwich	4		0	2021-1-1		1	369
+67	Small Whole Almond Cookie Box	Butter cookies with whole almond 	5		0	2021-1-1		1	273
+68	Grilled Chicken Panini	Non spicy chicken sandwich made in house baked italian bread	7		0	2015-1-1		1	315
+69	Small Cashew Cookie Box	Cashew butter cookies	5		0	2021-1-1		1	272
+70	Vegetable Sandwich	Mixed vegetable sandwiches	3		0	2002-1-1		1	250
+71	Large Cashew Cookie Box	Cashew butter cookies	10		0	2015-1-1		1	261
+72	Chicken Tikka Sandwich	Chicken tikka flavor spicy sandwiches 	4		0	2002-1-1		1	249
+73	Fruit Toast	Sweet toast with fruit candies	4		0	2021-1-1		1	308
+74	Masala Aalo Puff	Spicy potato filling puff pastry	3		0	2015-1-1		1	353
+75	Mango Pastry	Vanilla base with mango puree	3		0	2021-1-1		1	331
+76	Large Round Fruit Cake	Vanilla cake with fruit candies and almond flakes	8		0	2015-1-1		1	300
+77	Large Tutti-Frutti Cookie Box	Butter cookies with mini fruit candies	10		0	2002-1-1		1	259
+78	Chicken Tikka Bun	Spicy grounded chicken tikka flavor filled bun	3		0	2021-1-1		1	116
+79	Vegetable Grilled Sandwich	Cheese and mixed vegetable sandwich in house baked sandwich bread	6		0	2002-1-1		1	112
+80	Large Coconut Cookie Box	Coconut flavor cookies	10		0	2015-1-1		1	257
+81	Chicken Seekh Kabob Bun	Spicy chicken seekh kabob filled bun	3		0	2021-1-1		1	115
+82	Large Mixed Cookie Box	Mixture of all cookies 	10		0	2015-1-1		1	274
+83	Mocha Pastry	Chocolate base with coffee and chocolate flavor	3		0	2002-1-1		1	333
+84	Aaloo Capsicum Croissants	Spicy aaloo filling croissants	3		0	2021-1-1		1	276

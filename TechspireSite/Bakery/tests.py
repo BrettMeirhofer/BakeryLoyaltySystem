@@ -1,6 +1,6 @@
 from django.test import TestCase
 from Bakery import models
-from bulk_insert import bulk_import_from_tsv, model_tree_to_list
+import bulk_insert
 from decimal import Decimal
 
 
@@ -14,10 +14,7 @@ class LookupModelTestCase(TestCase):
 
     # Imports data for the model class and any models that it relies on
     def setUp(self):
-        dependency_models = model_tree_to_list(self.model_class, {})
-        for target_model in dependency_models:
-            bulk_import_from_tsv(target_model)
-        bulk_import_from_tsv(self.model_class)
+        bulk_insert.bulk_import_with_dependencies([self.model_class])
 
     # Checking the number of rows catches issues with partial/failed imports
     def test_rows(self):
@@ -39,6 +36,10 @@ class StoreStatusTestCase(LookupModelTestCase):
 
 class ProductStatusTestCase(StoreStatusTestCase):
     model_class = models.ProductStatus
+
+
+class RewardStatusTestCase(StoreStatusTestCase):
+    model_class = models.RewardStatus
 
 
 class CustomerStatusTestCase(StoreStatusTestCase):
@@ -65,21 +66,56 @@ class StoreTestCase(LookupModelTestCase):
     model_class = models.Store
     rows = 3
     assert_values = [[1, "store_name", "Store 1"],
-                     [3, "store_status_id", 2]]
+                     [3, "store_status_id", 1]]
 
 
-class PointReasonCase(LookupModelTestCase):
+class PointReasonTestCase(LookupModelTestCase):
     model_class = models.PointReason
     rows = 2
     assert_values = [[1, "reason_name", "Complimentary  Points"],
                      [2, "reason_name", "System Failure"]]
 
 
+class StoreProductTestCase(LookupModelTestCase):
+    model_class = models.StoreProduct
+    rows = 276
+
+    # The number of StoreProducts must be at-least equal to the number of Products
+    def test_rows(self):
+        self.assertTrue(self.model_class.objects.count() >= self.rows)
+
+    # The data is generated so there are no reference values to use for test_values
+    def test_values(self):
+        pass
+
+
+class CustomerTestCase(StoreProductTestCase):
+    model_class = models.Customer
+    rows = 100
+
+
+class RewardTestCase(StoreProductTestCase):
+    model_class = models.Reward
+    rows = 30
+
+
+class StoreRewardTestCase(StoreProductTestCase):
+    model_class = models.StoreReward
+    rows = 100
+
+
 #
 class ModelTreeToListTestCase(TestCase):
-    def test_model_tree_to_list(self):
-        model_list = [models.ProductType, models.ProductStatus, models.BanType]
-        self.assertEqual(model_list, model_tree_to_list(models.Product, {}))
+    # Tests that the output is in the same as expected in a 2-level tree
+    def test_model_tree_to_list_product(self):
+        model_list = [models.BanType, models.ProductStatus, models.ProductType]
+        self.assertEqual(model_list, bulk_insert.model_tree_to_list([models.Product]))
+
+    # Tests that the output is the same as expected in a 3-level tree
+    def test_model_tree_to_list_store_product(self):
+        model_list = [models.StoreStatus, models.Store, models.BanType,
+                      models.ProductStatus, models.ProductType, models.Product]
+        self.assertEqual(model_list, bulk_insert.model_tree_to_list([models.StoreProduct]))
 
 
 # Test submitting a PointLog

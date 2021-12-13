@@ -39,22 +39,40 @@ def bulk_import_from_tsv(model_class):
     with open(file_path, 'r') as csv_file:
         bulk_mgr = BulkCreateManager(chunk_size=20)
         for row in csv.DictReader(csv_file, delimiter="\t"):
+            # Removes all empty strings from the row dict
+            row = {k: v for k, v in row.items() if v != ""}
             bulk_mgr.add(model_class(**row))
         bulk_mgr.done()
 
 
-def model_tree_to_list(model_class, model_list):
-    model_object = model_class()
-    model_fields = model_object._meta.get_fields(include_parents=False)
-    for field in model_fields:
-        if isinstance(field, models.ForeignKey):
-            target_model = field.remote_field.model
-            if target_model in model_list:
-                continue
-            else:
-                model_list[target_model.__name__] = target_model
-                model_tree_to_list(target_model, model_list)
-
-    return list(model_list.values())
+def model_tree_to_list(model_classes):
+    model_dict = {}
+    get_model_dependencies(model_classes, model_dict)
+    model_list = list(model_dict.values())
+    model_list.reverse()
+    return model_list
 
 
+def get_model_dependencies(model_classes, model_dict):
+    for model_class in model_classes:
+        model_object = model_class()
+        model_fields = model_object._meta.get_fields(include_parents=False)
+        for field in model_fields:
+            if isinstance(field, models.ForeignKey):
+                target_model = field.remote_field.model
+                if target_model in model_dict:
+                    continue
+                else:
+                    model_dict[target_model.__name__] = target_model
+                    get_model_dependencies([target_model], model_dict)
+
+
+def bulk_import_with_dependencies(model_classes):
+    import_list = model_tree_to_list(model_classes)
+    import_list.extend(model_classes)
+    for target_model in import_list:
+        bulk_import_from_tsv(target_model)
+
+
+if __name__ == '__main__':
+    bulk_import_with_dependencies([])
