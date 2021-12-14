@@ -104,7 +104,26 @@ class StoreRewardTestCase(StoreProductTestCase):
     rows = 100
 
 
-#
+class OrderTestCase(StoreProductTestCase):
+    model_class = models.Order
+    rows = 100
+
+
+class OrderLineTestCase(StoreProductTestCase):
+    model_class = models.OrderLine
+    rows = 100
+
+
+class PointLogTestCase(StoreProductTestCase):
+    model_class = models.PointLog
+    rows = 50
+
+
+class OrderRewardTestCase(StoreProductTestCase):
+    model_class = models.OrderReward
+    rows = 50
+
+
 class ModelTreeToListTestCase(TestCase):
     # Tests that the output is in the same as expected in a 2-level tree
     def test_model_tree_to_list_product(self):
