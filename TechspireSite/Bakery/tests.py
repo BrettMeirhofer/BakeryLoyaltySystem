@@ -2,6 +2,7 @@ from django.test import TestCase
 from Bakery import models
 import bulk_insert
 from decimal import Decimal
+from django.db.models import Max, Min
 
 
 class LookupModelTestCase(TestCase):
@@ -23,7 +24,8 @@ class LookupModelTestCase(TestCase):
     # Sampling parts of the data and comparing it known values helps to identify accidental transformations
     def test_values(self):
         for test_options in self.assert_values:
-            self.assertEqual(getattr(self.model_class.objects.get(id=test_options[0]), test_options[1]), test_options[2])
+            self.assertEqual(getattr(self.model_class.objects.get(id=test_options[0]), test_options[1]),
+                             test_options[2])
 
 
 # Testing status models is identical so the values are reused
@@ -137,6 +139,52 @@ class ModelTreeToListTestCase(TestCase):
         self.assertEqual(model_list, bulk_insert.model_tree_to_list([models.StoreProduct]))
 
 
+class StoredSQLTestCase(TestCase):
+    product_price_1 = Decimal("7.99")
+    product_price_2 = Decimal("15.99")
+
+    def setUp(self):
+        bulk_insert.bulk_import_with_dependencies([models.OrderLine, models.OrderReward, models.PointLog])
+        models.Product.objects.create(id=5001, product_price=self.product_price_1, product_name="Test1",
+                                      product_type_id=1, product_status_id=1)
+        models.StoreProduct.objects.create(id=5001, store_id=1, product_id=5001)
+
+        models.Product.objects.create(id=5002, product_price=self.product_price_2, product_name="Test2",
+                                      product_type_id=1, product_status_id=1, ban_reason_id=1)
+        models.StoreProduct.objects.create(id=5002, store_id=1, product_id=5002)
+
+    # Checks that OrderLine.save() correctly calculates and stores derived values
+    def test_create_order_line(self):
+        models.Order.objects.create(id=5001, customer_id=1, store_id=1)
+        models.OrderLine.objects.create(id=5001, order_id=5001, product_id=5001, quantity=5)
+        saved_order_line = models.OrderLine.objects.get(id=5001)
+        self.assertTrue(Decimal("39.9500"), saved_order_line.total_price)
+        self.assertTrue(saved_order_line.points_eligible)
+        self.assertEqual(saved_order_line.ind_price, self.product_price_1)
+
+    # Checks that the update script for importing OrderLines updates the totals correctly
+    def test_calculate_order_line_totals(self):
+        bulk_insert.run_sql("CalculateOrderLineTotals.sql")
+        target_order_line = models.OrderLine.objects.get(id=1)
+        expected_total = target_order_line.ind_price * target_order_line.quantity
+        self.assertEqual(expected_total, target_order_line.total_price)
+
+    # Checks that totals for the most basic order is calculated correctly
+    def test_calculate_order_details(self):
+        models.Order.objects.create(id=5005, customer_id=1, store_id=1)
+        models.OrderLine.objects.create(id=5001, order_id=5005, product_id=5001, quantity=5)
+        bulk_insert.run_sql("CalculateOrderDetails.sql")
+        target_order = models.Order.objects.get(id=5005)
+        expected_total = Decimal("39.9500")
+        self.assertEqual(target_order.id, 5005)
+        self.assertEqual(target_order.original_total, expected_total)
+        self.assertEqual(target_order.final_total, expected_total)
+        self.assertEqual(target_order.eligible_for_points, expected_total)
+        self.assertEqual(target_order.points_produced, 3)
+        self.assertEqual(target_order.points_total, 3)
+        self.assertEqual(target_order.discount_amount, 0)
+
+
 # Test submitting a PointLog
 # Test submitting a PointLog with negative points
 # Test submitting an order with no orderlines
@@ -150,3 +198,6 @@ class ModelTreeToListTestCase(TestCase):
 # Test submitting an order with banned products
 # Test submitting an order with orderlines with quantities of 0
 # Test submitting an order with 20 orderlines
+# Test submitting an order with orderlines that use the same product
+# top_directory = path.dirname(path.dirname(path.dirname(__file__)))
+# sql_path = path.join(top_directory, "SQL", "CalculateOrderLineTotals.sql")

@@ -9,6 +9,7 @@ from phonenumber_field.formfields import PhoneNumberField
 from .models import OrderLine, Product, Reward, OrderReward, Customer
 
 
+
 class LocationForm(forms.ModelForm):
     test_field = forms.CharField(label='Your name', max_length=100)
 

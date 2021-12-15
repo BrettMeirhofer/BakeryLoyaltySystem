@@ -3,6 +3,20 @@ from django.apps import apps
 import csv
 from os import path
 from django.db import models
+from django.db import connection, ProgrammingError, DataError
+from os import path
+
+
+def get_sql_text(file_name):
+    top_directory = path.dirname(path.dirname(path.dirname(__file__)))
+    sql_path = path.join(top_directory, "SQL", file_name)
+    return open(sql_path).read()
+
+
+def run_sql(file_name):
+    sql_text = get_sql_text(file_name)
+    with connection.cursor() as cursor:
+        cursor.execute(sql_text)
 
 
 class BulkCreateManager(object):
