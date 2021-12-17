@@ -2,6 +2,7 @@ from django.db import models
 from django import forms
 from phonenumber_field.modelfields import PhoneNumberField
 from django.utils import timezone
+from django.db.models import Sum
 import os
 from django.db import connection
 from. import bulk_insert
@@ -194,7 +195,8 @@ class Order(DescriptiveModel):
 
     def save(self, *args, **kwargs):
         super(Order, self).save(*args, **kwargs)
-        bulk_insert.run_sql("CalculateCustomerPointsSingle.sql", [self.customer.id])
+        update_customer_points(self.customer.id)
+        #bulk_insert.run_sql("CalculateCustomerPointsSingle.sql", [self.customer.id])
 
 
 class ProductType(DescriptiveModel):
@@ -367,4 +369,27 @@ class PointLog(DescriptiveModel):
 
     def save(self, *args, **kwargs):
         super(PointLog, self).save(*args, **kwargs)
-        bulk_insert.run_sql("CalculateCustomerPointsSingle.sql", [self.customer.id])
+        update_customer_points(self.customer.id)
+        #bulk_insert.run_sql("CalculateCustomerPointsSingle.sql", [self.customer.id])
+
+
+def update_customer_points(customer_id):
+    target_customer = Customer.objects.get(id=customer_id)
+    pos_log = \
+    PointLog.objects.filter(customer__id=customer_id).filter(points_amount__gt=0).aggregate(Sum("points_amount"))[
+        "points_amount__sum"]
+    neg_log = \
+    PointLog.objects.filter(customer__id=customer_id).filter(points_amount__lt=0).aggregate(Sum("points_amount"))[
+        "points_amount__sum"]
+    order_totals = Order.objects.filter(customer__id=customer_id).aggregate(Sum("points_produced"),
+                                                                                 Sum("points_consumed"))
+    pos_order = order_totals["points_produced__sum"]
+    neg_order = order_totals["points_consumed__sum"]
+    pos_log = 0 if pos_log is None else pos_log
+    neg_log = 0 if neg_log is None else neg_log
+    pos_order = 0 if pos_order is None else pos_order
+    neg_order = 0 if neg_order is None else neg_order
+    target_customer.points_earned = pos_log + pos_order
+    target_customer.points_spent = neg_order - neg_log
+    target_customer.point_total = (pos_log + pos_order) - neg_order - neg_log
+    target_customer.save()

@@ -6,6 +6,7 @@ from os import path
 from Bakery import models
 
 
+
 # Creates a path to the directory where raw SQL is stored
 # Modify if the SQL directory is moved
 def get_sql_text(file_name):
