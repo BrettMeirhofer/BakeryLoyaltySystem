@@ -9,6 +9,6 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         bulk_insert.run_sql("CalculateOrderLineTotals.sql")
-        bulk_insert.run_sql("CalculateOrderDetails.sql")
+        #bulk_insert.run_sql("CalculateOrderDetails.sql")
         bulk_insert.run_sql("CalculateCustomerPoints.sql")
         self.stdout.write(self.style.SUCCESS("Successfully imported data"))
