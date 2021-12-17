@@ -38,6 +38,7 @@ class TwentyPageAdmin(admin.ModelAdmin):
 class MenuAdmin(TwentyPageAdmin):
     list_display = ["product", "store"]
     list_filter = ["store"]
+    search_fields = ["product__product_name"]
 
 
 @admin.register(models.Reward)
@@ -126,15 +127,6 @@ class OrderAdmin(TwentyPageAdmin):
         if obj:
             return False
         return True
-
-    def save_model(self, request, obj, form, change):
-        points_added = models.PointLog(customer=obj.customer,
-                                       reason_id=4, order=obj, points_amount=obj.points_produced)
-        points_removed = models.PointLog(customer=obj.customer,
-                                         reason_id=5, order=obj, points_amount=-obj.points_consumed)
-        obj.save()
-        points_added.save()
-        points_removed.save()
 
 
 @admin.register(models.Product)

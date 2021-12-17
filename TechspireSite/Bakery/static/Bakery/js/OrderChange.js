@@ -91,7 +91,7 @@ function update_order_total() {
 
 
 
-    points_produced = (Math.floor(parseFloat(eligible) / 5)).toFixed(0)
+    points_produced = (Math.floor(parseFloat(eligible) / 10)).toFixed(0)
     points_total = points_produced - points_consumed
     console.log(discount)
     final_total = order_total - discount

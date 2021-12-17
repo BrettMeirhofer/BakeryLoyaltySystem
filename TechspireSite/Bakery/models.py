@@ -4,6 +4,7 @@ from phonenumber_field.modelfields import PhoneNumberField
 from django.utils import timezone
 import os
 from django.db import connection
+from. import bulk_insert
 
 
 def past_validator(value):
@@ -25,7 +26,6 @@ class DescriptiveModel(models.Model):
     id = models.AutoField(primary_key=True)
     description = "Blank Description"
     pk_desc = "Standard Auto-Increment PK"
-    load_order = -1
 
     class Meta:
         abstract = True
@@ -37,7 +37,6 @@ class StatusCode(DescriptiveModel):
     status_name = models.CharField(max_length=40)
     status_desc = models.CharField(max_length=200, blank=True, null=True)
     is_active = models.BooleanField(default=True)
-    load_order = 1
     category = "Other"
 
     def __str__(self):
@@ -52,7 +51,6 @@ class LabelCode(DescriptiveModel):
     description = "Allows for multiple named categories"
     type_name = models.CharField(max_length=40)
     type_desc = models.CharField(max_length=200, blank=True, null=True)
-    load_order = 1
     category = "Other"
 
     def __str__(self):
@@ -99,7 +97,6 @@ class RewardStatus(StatusCode):
 
 class BanType(DescriptiveModel):
     description = "Describes why a specific product that is banned"
-    load_order = 1
     ban_name = models.CharField(max_length=40)
     ban_desc = models.CharField(max_length=200, blank=True, null=True)
     category = "Other"
@@ -116,7 +113,6 @@ class PointReason(DescriptiveModel):
     description = "Describes why points were added or removed"
     reason_name = models.CharField(max_length=40)
     reason_desc = models.CharField(max_length=200, blank=True, null=True)
-    load_order = 1
     category = "Other"
 
     class Meta:
@@ -151,7 +147,6 @@ class Customer(Person):
     points_earned = models.IntegerField(default=0)
     points_spent = models.IntegerField(default=0)
     point_total = models.IntegerField(default=0)
-    load_order = 5
     category = "Cashier"
 
     class Meta:
@@ -165,7 +160,6 @@ class Store(DescriptiveModel):
     store_status = models.ForeignKey(StoreStatus, on_delete=models.RESTRICT)
     start_date = models.DateField()
     end_date = models.DateField(blank=True, null=True)
-    load_order = 4
     category = "Core"
 
     class Meta:
@@ -189,7 +183,6 @@ class Order(DescriptiveModel):
     points_total = models.IntegerField(default=0)
     customer = models.ForeignKey(Customer, on_delete=models.RESTRICT)
     store = models.ForeignKey(Store, on_delete=models.RESTRICT)
-    load_order = 6
     category = "Cashier"
 
     class Meta:
@@ -199,6 +192,10 @@ class Order(DescriptiveModel):
     def __str__(self):
         return str(self.store) + "-" + str(self.customer) + "-" + str(self.order_date)
 
+    def save(self, *args, **kwargs):
+        super(Order, self).save(*args, **kwargs)
+        bulk_insert.run_sql("CalculateCustomerPointsSingle.sql", [self.customer.id])
+
 
 class ProductType(DescriptiveModel):
     description = 'Identifying certain product types that are eligible ' \
@@ -206,7 +203,6 @@ class ProductType(DescriptiveModel):
                   'that are not eligible to earn points on; used to distinguish exclusions. '
     product_type_name = models.CharField(max_length=40)
     product_type_desc = models.CharField(max_length=200, blank=True, null=True)
-    load_order = 1
     category = "Other"
 
     class Meta:
@@ -225,7 +221,6 @@ class Product(DescriptiveModel):
     product_type = models.ForeignKey(ProductType, on_delete=models.RESTRICT)
     product_status = models.ForeignKey(ProductStatus, on_delete=models.RESTRICT)
     ban_reason = models.ForeignKey(BanType, on_delete=models.SET_NULL, blank=True, null=True)
-    load_order = 2
     category = "Core"
 
     class Meta:
@@ -243,20 +238,20 @@ class OrderLine(DescriptiveModel):
                   'that describes the customer’s transaction ' \
                   'and product details (quantity, product type, ' \
                   'total price for that order line).'
-    quantity = models.IntegerField(default=0)
+    quantity = models.IntegerField(default=1)
     ind_price = models.DecimalField(max_digits=19, decimal_places=4, default=0)
     total_price = models.DecimalField(max_digits=19, decimal_places=4, default=0)
     product = models.ForeignKey(Product, on_delete=models.RESTRICT)
     order = models.ForeignKey(Order, on_delete=models.RESTRICT)
     points_eligible = models.BooleanField(default=True)
-    load_order = 7
 
     class Meta:
         db_table = "OrderLine"
         verbose_name = "Order Line"
         verbose_name_plural = verbose_name
         
-        constraints = [models.UniqueConstraint(fields=['order', 'product'], name='unique_order_product')]
+        constraints = [models.UniqueConstraint(fields=['order', 'product'], name='unique_order_product'),
+                       models.CheckConstraint(check=models.Q(quantity__gt=0), name='quantity_gt_0')]
 
     def save(self, *args, **kwargs):
         target_product = Product.objects.get(pk=self.product.id)
@@ -284,7 +279,6 @@ class Reward(DescriptiveModel):
     free_product = models.ForeignKey(Product, on_delete=models.SET_NULL, blank=True, null=True)
     date_added = models.DateField(auto_now_add=True)
     date_disabled = models.DateField(blank=True, null=True)
-    load_order = 3
     category = "Core"
 
     class Meta:
@@ -300,7 +294,6 @@ class StoreProduct(DescriptiveModel):
     product = models.ForeignKey(Product, on_delete=models.RESTRICT)
     store = models.ForeignKey(Store, on_delete=models.RESTRICT)
     product_assigned = models.DateField(auto_now_add=True)
-    load_order = 5
     category = "Core"
 
     class Meta:
@@ -319,7 +312,6 @@ class StoreReward(DescriptiveModel):
     reward = models.ForeignKey(Reward, on_delete=models.RESTRICT)
     store = models.ForeignKey(Store, on_delete=models.RESTRICT)
     reward_assigned = models.DateField(auto_now_add=True)
-    load_order = 5
     category = "Core"
 
     class Meta:
@@ -340,7 +332,6 @@ class OrderReward(DescriptiveModel):
     point_cost = models.IntegerField(default=0)
     discount_amount = models.DecimalField(max_digits=19, decimal_places=4, default=0)
     free_product = models.ForeignKey(Product, on_delete=models.SET_NULL, blank=True, null=True)
-    load_order = 7
 
     class Meta:
         db_table = "OrderReward"
@@ -364,7 +355,6 @@ class PointLog(DescriptiveModel):
     created_date = models.DateField(auto_now_add=True)
     customer = models.ForeignKey(Customer, on_delete=models.RESTRICT)
     reason = models.ForeignKey(PointReason, on_delete=models.RESTRICT)
-    load_order = 7
     category = "Core"
 
     class Meta:
@@ -376,11 +366,5 @@ class PointLog(DescriptiveModel):
         return str(self.customer) + " " + str(self.reason) + " " + str(self.created_date)
 
     def save(self, *args, **kwargs):
-        customer = self.customer.id
         super(PointLog, self).save(*args, **kwargs)
-        module_dir = os.path.dirname(__file__)
-        path = os.path.join(os.path.dirname(module_dir), "TechspireSite", "SQL",
-                            "Brett M", "UpdateCustomerPointsSingle.sql")
-        sql = open(path).read()
-        with connection.cursor() as cursor:
-            cursor.execute(sql, [customer])
+        bulk_insert.run_sql("CalculateCustomerPointsSingle.sql", [self.customer.id])
