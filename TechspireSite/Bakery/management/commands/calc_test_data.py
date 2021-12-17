@@ -8,5 +8,7 @@ class Command(BaseCommand):
     help = 'Imports the test data into the database'
 
     def handle(self, *args, **options):
-        bulk_insert.bulk_import_bakery()
+        bulk_insert.run_sql("CalculateOrderLineTotals.sql")
+        bulk_insert.run_sql("CalculateOrderDetails.sql")
+        bulk_insert.run_sql("CalculateCustomerPoints.sql")
         self.stdout.write(self.style.SUCCESS("Successfully imported data"))
