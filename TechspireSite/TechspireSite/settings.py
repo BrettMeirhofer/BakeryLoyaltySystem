@@ -28,8 +28,7 @@ SECRET_KEY = SiteVars.DjangoKey
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = SiteVars.Debug
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = SiteVars.allowed_hosts
 
 # Application definition
 
