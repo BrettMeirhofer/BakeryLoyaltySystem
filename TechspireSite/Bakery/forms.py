@@ -66,12 +66,12 @@ class RewardFormSet(BaseInlineFormSet):
             self.instance.points_total = self.instance.points_produced - consumed_points
             self.instance.final_total -= discount
             self.instance.eligible_for_points -= discount
-            modified_points = self.instance.customer.pointlog_set.all().aggregate(Sum('points_amount'))[
-                "points_amount__sum"]
-            modified_points += self.instance.points_total
+            modified_points = self.instance.customer.point_total - consumed_points
             if modified_points < 0:
                 raise validators.ValidationError("Customer needs {} more points to complete this transaction"
                                                  .format(str(-modified_points)))
+            if self.instance.final_total < 0:
+                raise validators.ValidationError("Discount cannot be greater than Original Total")
         except Customer.DoesNotExist:
             #if customer doesn't exist don't bother
             pass

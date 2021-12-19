@@ -68,7 +68,7 @@ def bulk_import_from_tsv(model_class):
 
 def bulk_import_bakery():
     model_list = [models.CustomerStatus, models.RewardStatus, models.StoreStatus, models.BanType, models.PointReason, models.ProductType,
-                  models.ProductStatus, models.Product, models.Customer, models.Store, models.Reward,
+                  models.ProductStatus, models.Product, models.Customer, models.Store, models.Order, models.Reward, models.PointLog, models.OrderLine, models.OrderReward,
                   models.StoreReward, models.StoreProduct]
     for target_model in model_list:
         bulk_import_from_tsv(target_model)

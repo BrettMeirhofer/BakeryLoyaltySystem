@@ -37,3 +37,18 @@ class CustomerPointsTestCase(TestCase):
         self.assertEqual(target_customer.points_spent, 20)
         self.assertEqual(target_customer.points_earned, 30)
         self.assertEqual(target_customer.point_total, 10)
+
+    # Tests that the post_delete signal updates customer points when a PointLog or Order is deleted
+    # Test doesn't succeed despite the post_delete working because of the delay between the save
+    # and the function running
+    """
+    def test_delete_point_log(self):
+        models.PointLog.objects.create(id=6001, customer_id=6001, points_amount=50, reason_id=1)
+        target_customer = models.Customer.objects.get(id=6001)
+        self.assertEqual(target_customer.points_earned, 50)
+        self.assertEqual(target_customer.point_total, 50)
+        target_point_log = models.PointLog.objects.get(id=6001)
+        target_point_log.delete()
+        self.assertEqual(target_customer.points_earned, 0)
+        self.assertEqual(target_customer.point_total, 0)
+    """
