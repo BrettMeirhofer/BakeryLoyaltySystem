@@ -11,11 +11,10 @@
 - Remove unused libraries from packages
 - Add tablet compatible dashboard with large buttons for most common tasks
 - Add 2Factor (Depends on client wishes)
-- Split testing into multiple files
 - Split bakery into multiple Apps
-- Implement CI test running using Github
 - Unhide history button
 - Remove collapse button
+- Split data generator into it's own repo
 
 # Complete
 - Bulk Insert for all models
