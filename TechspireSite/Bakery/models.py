@@ -12,6 +12,10 @@ def past_validator(value):
         raise forms.ValidationError("The date must be in the past!")
     return value
 
+def not_zero_validator(value):
+    if value == 0:
+        raise forms.ValidationError("The value cannot be zero")
+
 
 class MoneyField(models.DecimalField):
     def __init__(self):
@@ -348,7 +352,7 @@ class OrderReward(DescriptiveModel):
 
 class PointLog(DescriptiveModel):
     description = "Describes all point transactions for a customer in a single table."
-    points_amount = models.IntegerField(default=0)
+    points_amount = models.IntegerField(default=1)
     created_date = models.DateField(auto_now_add=True)
     customer = models.ForeignKey(Customer, on_delete=models.RESTRICT)
     reason = models.ForeignKey(PointReason, on_delete=models.RESTRICT)
@@ -361,6 +365,8 @@ class PointLog(DescriptiveModel):
 
     def __str__(self):
         return str(self.customer) + " " + str(self.reason) + " " + str(self.created_date)
+
+
 
 
 

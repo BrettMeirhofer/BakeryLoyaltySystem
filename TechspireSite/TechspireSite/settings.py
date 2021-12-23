@@ -13,28 +13,41 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 
-sitevars_exist = True
-try:
-    __import__("sitevars")
-except ImportError:
-    sitevars_exist = False
 
+try:
+    from . import sitevars
+    pass
+except ValueError:
+    SECRET_KEY = "vdxiih@c53!x^baaj^9c%(u5a0@q&f0^9m3b=$#+(s(oz*$0$z"
+    DEBUG = False
+    ALLOWED_HOSTS = []
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': 'db.sqlite3',
+        }
+    }
+else:
+    # SECURITY WARNING: keep the secret key used in production secret!
+    SECRET_KEY = sitevars.SiteVars.DjangoKey
+
+    # SECURITY WARNING: don't run with debug turned on in production!
+    DEBUG = sitevars.SiteVars.Debug
+
+    ALLOWED_HOSTS = sitevars.SiteVars.allowed_hosts
+
+    DATABASES = sitevars.SiteVars.DATABASES
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = sitevars.SiteVars.DjangoKey if sitevars_exist else "vdxiih@c53!x^baaj^9c%(u5a0@q&f0^9m3b=$#+(s(oz*$0$z"
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = sitevars.SiteVars.Debug if sitevars_exist else False
-
-ALLOWED_HOSTS = sitevars.SiteVars.allowed_hosts if sitevars_exist else []
 
 # Application definition
 
@@ -87,12 +100,7 @@ WSGI_APPLICATION = 'TechspireSite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = sitevars.SiteVars.DATABASES if sitevars_exist else {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': 'db.sqlite3',
-        }
-    }
+
 
 
 # Password validation
