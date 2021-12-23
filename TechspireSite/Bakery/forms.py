@@ -9,7 +9,6 @@ from phonenumber_field.formfields import PhoneNumberField
 from .models import OrderLine, Product, Reward, OrderReward, Customer
 
 
-
 class LocationForm(forms.ModelForm):
     test_field = forms.CharField(label='Your name', max_length=100)
 
@@ -43,7 +42,7 @@ class OrderFormSet(BaseInlineFormSet):
         self.instance.original_total = total
         self.instance.final_total = total
         self.instance.eligible_for_points = eligible
-        self.instance.points_produced = math.floor(eligible/5)
+        self.instance.points_produced = math.floor(eligible/10)
 
 
 class RewardFormSet(BaseInlineFormSet):

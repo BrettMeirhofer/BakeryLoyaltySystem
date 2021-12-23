@@ -52,3 +52,4 @@ class CustomerPointsTestCase(TestCase):
         self.assertEqual(target_customer.points_earned, 0)
         self.assertEqual(target_customer.point_total, 0)
     """
+

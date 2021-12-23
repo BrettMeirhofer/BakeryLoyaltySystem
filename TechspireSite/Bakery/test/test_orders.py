@@ -2,6 +2,7 @@ from Bakery import models
 from django.test import TestCase
 import bulk_insert
 from decimal import Decimal
+from django.db.utils import IntegrityError
 
 
 class StoredSQLTestCase(TestCase):
@@ -93,8 +94,20 @@ class StoredSQLTestCase(TestCase):
         self.assertEqual(target_order.points_consumed, 10)
         self.assertEqual(target_order.points_total, -4)
 
+    # Checks that an error occurs if 2+ orderlines for the same order have the same product
+    def test_order_duplicate_order_lines(self):
+        models.Order.objects.create(id=5005, customer_id=1, store_id=1)
+        models.OrderLine.objects.create(id=5001, order_id=5005, product_id=5001, quantity=8)
+        with self.assertRaises(IntegrityError):
+            models.OrderLine.objects.create(id=5001, order_id=5005, product_id=5001, quantity=4)
+
+    def test_order_line_0_quantity(self):
+        models.Order.objects.create(id=5005, customer_id=1, store_id=1)
+        with self.assertRaises(IntegrityError):
+            models.OrderLine.objects.create(id=5001, order_id=5005, product_id=5001, quantity=0)
 
 
+# Test submitting an order with a discount greater then original_total
 # Test submitting an order with no orderlines
 # Test submitting an order with no rewards
 # Test submitting an order with both orderlines and rewards
@@ -104,6 +117,5 @@ class StoredSQLTestCase(TestCase):
 # Test submitting an order with inactive products
 # Test submitting an order with inactive rewards
 # Test submitting an order with banned products
-# Test submitting an order with orderlines with quantities of 0
-# Test submitting an order with 20 orderlines
-# Test submitting an order with orderlines that use the same product
+
+
