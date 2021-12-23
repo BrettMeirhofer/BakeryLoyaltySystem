@@ -16,7 +16,7 @@ import os
 
 try:
     from . import sitevars
-except ValueError:
+except ImportError:
     SECRET_KEY = "vdxiih@c53!x^baaj^9c%(u5a0@q&f0^9m3b=$#+(s(oz*$0$z"
     DEBUG = False
     ALLOWED_HOSTS = []
