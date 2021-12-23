@@ -11,8 +11,14 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-from .sitevars import SiteVars
 import os
+
+sitevars_exist = True
+try:
+    __import__("sitevars")
+except ImportError:
+    sitevars_exist = False
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,12 +29,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = SiteVars.DjangoKey
+SECRET_KEY = sitevars.SiteVars.DjangoKey if sitevars_exist else "vdxiih@c53!x^baaj^9c%(u5a0@q&f0^9m3b=$#+(s(oz*$0$z"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = SiteVars.Debug
+DEBUG = sitevars.SiteVars.Debug if sitevars_exist else False
 
-ALLOWED_HOSTS = SiteVars.allowed_hosts
+ALLOWED_HOSTS = sitevars.SiteVars.allowed_hosts if sitevars_exist else []
 
 # Application definition
 
@@ -81,7 +87,12 @@ WSGI_APPLICATION = 'TechspireSite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = SiteVars.DATABASES
+DATABASES = sitevars.SiteVars.DATABASES if sitevars_exist else {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': 'db.sqlite3',
+        }
+    }
 
 
 # Password validation
